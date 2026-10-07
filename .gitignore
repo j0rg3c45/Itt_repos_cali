@@ -24,3 +24,6 @@ _*.py
 
 # uv
 uv.lock
+
+# Cache de osmnx (grafos OSM descargados) y otros caches locales
+cache/
