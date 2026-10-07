@@ -8,6 +8,7 @@ matplotlib>=3.6
 seaborn>=0.12
 folium>=0.14
 osmnx>=2.0
+pillow>=9.0
 openpyxl>=3.0
 jupyter>=1.0
 ipykernel>=6.0
