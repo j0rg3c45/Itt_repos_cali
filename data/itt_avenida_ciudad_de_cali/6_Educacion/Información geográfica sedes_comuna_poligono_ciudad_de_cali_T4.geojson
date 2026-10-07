@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Información geográfica sedes_comuna_poligono_ciudad_de_cali_T4",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Join_Count": 1, "TARGET_FID": 109, "EeCodDane": 176001043791, "EeNomIns": "Institucion Educativa Nuevo Latir", "EeCoDanAnt": 176001043791, "EeConSede": 17600104379100, "EeNomSede": "Institucion Educativa Nuevo Latir - Sede Principal", "EeClaSede": "PRIN", "EeEstado": "OF", "EeDirecc": "CL 76 28 20", "EeNomCorto": "IE Nuevo Latir", "EeEstado2": "IEOOF", "EEComCor": 14, "EEBarVer": 1401, "EEFecAct": "2023-06-30T00:00:00", "comuna": 14, "shape_leng": 9.266, "shape_area": 5000000.0, "nombre": "Comuna 14", "area": 4570881.8543800004, "tramo": "4", "distancia": 3193.35367597, "BUFF_DIST": 100.0, "ORIG_FID": 2, "proyecto": "TRAMO 04" }, "geometry": { "type": "Point", "coordinates": [ -76.486416026899391, 3.420560495071087 ] } }
+]
+}

@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "VBG_2025_OBRERO",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "DELITO": "VIOLENCIA BASADA EN GÉNERO", "COD_COMUNA": 9, "COMUNA": "Comuna 9", "COD_BARRIO": 910, "BARRIO": "Barrio Obrero", "DIRECCION": "CL 23 # 11 - 44", "LAT": 3.448635583, "LON": -76.52004134000001 }, "geometry": { "type": "Point", "coordinates": [ -76.52004134, 3.448635583 ] } },
+{ "type": "Feature", "properties": { "DELITO": "VIOLENCIA BASADA EN GÉNERO", "COD_COMUNA": 9, "COMUNA": "Comuna 9", "COD_BARRIO": 910, "BARRIO": "Barrio Obrero", "DIRECCION": "KR 11D # 23-58", "LAT": 3.447323596, "LON": -76.51911096000001 }, "geometry": { "type": "Point", "coordinates": [ -76.51911096, 3.447323596 ] } }
+]
+}

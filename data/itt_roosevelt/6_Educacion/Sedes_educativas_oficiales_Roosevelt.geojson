@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Sedes_educativas_oficiales_Roosevelt",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "CodDane": 176001001745.0, "NombreInst": "Institucion Educativa  Liceo Departamental", "CodDaneSed": 176001000000.0, "NombreSede": "Sede La Presentacion", "Clasificac": "SEDE", "Sector": "OF", "Dirección": "IND CALLE 5B1#29-06", "NombreCort": "SD La Presentacion", "ComunaCorr": 19, "BarrioVere": 1912, "Estado_DUE": "ANTIGUO-ACTIVO", "Latitud": "3.43147653", "Longitud": "-76.54015731", "Latitud_D": 3.43147653, "Longitud_D": -76.54015731 }, "geometry": { "type": "Point", "coordinates": [ -76.54015731, 3.43147653 ] } },
+{ "type": "Feature", "properties": { "CodDane": 176001001745.0, "NombreInst": "Institucion Educativa  Liceo Departamental", "CodDaneSed": 176001000000.0, "NombreSede": "Sede La Gran Colombia", "Clasificac": "SEDE", "Sector": "OF", "Dirección": "KR 24 7 74", "NombreCort": "SD La Gran Colombia", "ComunaCorr": 19, "BarrioVere": 1913, "Estado_DUE": "ANTIGUO-ACTIVO", "Latitud": "3.43593302", "Longitud": "-76.53681832", "Latitud_D": 3.43593302, "Longitud_D": -76.53681832 }, "geometry": { "type": "Point", "coordinates": [ -76.53681832, 3.43593302 ] } }
+]
+}

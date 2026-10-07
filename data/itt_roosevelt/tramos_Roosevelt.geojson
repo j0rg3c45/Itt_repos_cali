@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "tramos_Roosevelt",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Roosevelt", "FolderPath": "Roosevelt.kmz", "SymbolID": 0, "AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "Snippet": null, "PopupInfo": null, "Shape_Leng": 1641.93268188 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -76.538684918083774, 3.436679442193464, 0.0 ], [ -76.539081018928059, 3.428357557831106, 0.0 ], [ -76.538541738901728, 3.427541805378963, 0.0 ], [ -76.538042818999926, 3.426847496000097, 0.0 ], [ -76.537615487271523, 3.426284476594152, 0.0 ] ], [ [ -76.539081018928059, 3.428357557831106, 0.0 ], [ -76.539713668723337, 3.426821970393205, 0.0 ], [ -76.539081043982776, 3.426053376382901, 0.0 ], [ -76.53791285716882, 3.42550106409343, 0.0 ] ] ] } }
+]
+}

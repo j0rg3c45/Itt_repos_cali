@@ -1,0 +1,11 @@
+pandas>=1.5
+numpy>=1.23
+geopandas>=0.12
+pyproj>=3.4
+shapely>=2.0
+matplotlib>=3.6
+seaborn>=0.12
+folium>=0.14
+openpyxl>=3.0
+jupyter>=1.0
+ipykernel>=6.0

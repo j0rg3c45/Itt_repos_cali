@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Información geográfica sedes_comuna_poligono_ciudad_de_cali_T1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Join_Count": 1, "TARGET_FID": 337, "EeCodDane": 176001007875, "EeNomIns": "Institucion Educativa Tecnico Industrial Pedro Antonio Molina", "EeCoDanAnt": 176001012089, "EeConSede": 17600100787500, "EeNomSede": "Los Vencedores", "EeClaSede": "SEDE", "EeEstado": "OF", "EeDirecc": "IND KR 1A4 72D 19", "EeNomCorto": "SD Los Vencedores", "EeEstado2": "SEDOF", "EEComCor": 6, "EEBarVer": 696, "EEFecAct": "2023-06-30T00:00:00", "comuna": 6, "shape_leng": 1.275, "shape_area": 5000000.0, "nombre": "Comuna 6", "area": 5393999.0115900002, "tramo": "1", "distancia": 1051.2929989500001, "BUFF_DIST": 100.0, "ORIG_FID": 5, "proyecto": "TRAMO 01" }, "geometry": { "type": "Point", "coordinates": [ -76.487613680657631, 3.48827031462304 ] } },
+{ "type": "Feature", "properties": { "Join_Count": 1, "TARGET_FID": 339, "EeCodDane": 176001800052, "EeNomIns": "Institucion Educativa Llano Verde", "EeCoDanAnt": 176001800133, "EeConSede": 17600180005200, "EeNomSede": "San Luis", "EeClaSede": "SEDE", "EeEstado": "MC", "EeDirecc": "IND CL 72C 1A2 49", "EeNomCorto": "SD San Luis", "EeEstado2": "SEDMC", "EEComCor": 6, "EEBarVer": 696, "EEFecAct": "2023-06-30T00:00:00", "comuna": 6, "shape_leng": 1.275, "shape_area": 5000000.0, "nombre": "Comuna 6", "area": 5393999.0115900002, "tramo": "1", "distancia": 1051.2929989500001, "BUFF_DIST": 100.0, "ORIG_FID": 5, "proyecto": "TRAMO 01" }, "geometry": { "type": "Point", "coordinates": [ -76.488698119005051, 3.489415078464866 ] } }
+]
+}

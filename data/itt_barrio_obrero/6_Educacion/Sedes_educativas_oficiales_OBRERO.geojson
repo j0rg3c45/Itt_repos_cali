@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Sedes_educativas_oficiales_OBRERO",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "CodDane": 176001005368.0, "NombreInst": "Institucion Educativa Republica De Argentina", "CodDaneSed": 176001000000.0, "NombreSede": "Institucion Educativa Republica De Argentina", "Clasificac": "PRIN", "Sector": "OF", "Dirección": "KR 11 D 23 49", "NombreCort": "IE Republica De Argentina", "ComunaCorr": 9, "BarrioVere": 910, "Estado_DUE": "ANTIGUO-ACTIVO", "Latitud": "3.44756516", "Longitud": "-76.51929484", "Latitud_D": 3.44756516, "Longitud_D": -76.51929484 }, "geometry": { "type": "Point", "coordinates": [ -76.51929484, 3.44756516 ] } },
+{ "type": "Feature", "properties": { "CodDane": 176001005368.0, "NombreInst": "Institucion Educativa Republica De Argentina", "CodDaneSed": 176001000000.0, "NombreSede": "Policarpa Salavarrieta", "Clasificac": "SEDE", "Sector": "OF", "Dirección": "KR 11 22 A 30", "NombreCort": "SD Policarpa Salavarrieta", "ComunaCorr": 9, "BarrioVere": 910, "Estado_DUE": "ANTIGUO-ACTIVO", "Latitud": "3.44894713", "Longitud": "-76.52057112", "Latitud_D": 3.44894713, "Longitud_D": -76.52057112 }, "geometry": { "type": "Point", "coordinates": [ -76.52057112, 3.44894713 ] } }
+]
+}
