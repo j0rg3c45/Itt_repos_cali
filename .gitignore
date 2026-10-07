@@ -14,3 +14,13 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Figuras PNG generadas por los notebooks en la raiz del repo (se regeneran al ejecutar)
+/ciudad_paraiso_*.png
+/*.png
+
+# Scripts/temporales de ejecucion local y utilidades ad-hoc
+_*.py
+
+# uv
+uv.lock
