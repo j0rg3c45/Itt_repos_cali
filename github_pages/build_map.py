@@ -205,7 +205,8 @@ def main():
 
     print(f"Total puntos publicados (solo ubicacion + tipo): {total}")
 
-    folium.LayerControl(collapsed=False).add_to(m)
+    # collapsed=True: el control arranca como icono de capas y se despliega al tocarlo
+    folium.LayerControl(collapsed=True).add_to(m)
     out = SITE / "mapa.html"
     m.save(str(out))
     print(f"Mapa seguro generado -> {out}")
