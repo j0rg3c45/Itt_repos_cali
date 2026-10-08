@@ -63,6 +63,8 @@ def coords_dentro(path, poly_wgs, filtro=None):
     """Devuelve SOLO [(lat, lon), ...] de los puntos dentro del poligono.
     Descarta por completo las properties (no se publican)."""
     if not path.exists():
+        print(f"[AVISO] fuente no encontrada: {path} -> 0 puntos. "
+              f"Revisa el checkout/sparse-checkout si esperabas datos aqui.")
         return []
     g = gpd.read_file(path).to_crs("EPSG:4326")
     g = g[g.geometry.geom_type == "Point"]

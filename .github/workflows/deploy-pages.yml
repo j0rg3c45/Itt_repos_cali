@@ -28,13 +28,13 @@ jobs:
       - name: Checkout (solo lo necesario para el sitio)
         uses: actions/checkout@v4
         with:
+          # Se incluye TODA data/Ciudad_Paraiso (~11 MB) en vez de listar subcarpetas:
+          # evita que falte alguna (p.ej. "2_Dimensión_Cohesion_Social" con tilde, que
+          # contiene VIF) y simplifica el mantenimiento.
           sparse-checkout: |
             github_pages
             outputs/itt_ciudad_paraiso
-            data/Ciudad_Paraiso/geojson_area_ciudad_Paraiso
-            data/Ciudad_Paraiso/5_Dimension_Entorno_Urbano
-            data/Ciudad_Paraiso/1_Dimension_Seguridad
-            data/Ciudad_Paraiso/3_Dimension_Movilidad
+            data/Ciudad_Paraiso
 
       - name: Setup Python
         uses: actions/setup-python@v5
