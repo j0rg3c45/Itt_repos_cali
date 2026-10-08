@@ -23,6 +23,7 @@ Calcular el ITT para zonas de intervencion urbana en Cali y comparar resultados 
   - **REGLA (autorización explícita):** NINGUNA conexión ni comando contra AWS (`aws sso login`, `aws s3 ...`, `sts`, crear/editar/etiquetar recursos, cualquier llamada a la cuenta/datalake) se ejecuta sin autorización explícita del usuario en el momento. El agente debe pedir confirmación antes de correr cualquier comando AWS, aunque las credenciales ya estén activas.
   - **Creación/nomenclatura de recursos:** `docs/07_conexion_aws_calitrack.md` también define el protocolo de creación: nombres `aca-prod-<dominio>-<funcion>[-<detalle>]` (minúsculas/guiones, sin tildes ni emojis), tag obligatorio `Proyecto=CaliTrack`, región `us-east-1`, perfil `calitrack-aca`. Reglas de oro: no tocar `raw/` ni zonas protegidas (`raw/blend_instantdb/`, `externo/`), no crear/editar roles IAM, salidas idempotentes por fecha en `curated/<fuente>/<YYYY-MM-DD>/`.
   - **Estructura del datalake:** `raw/`, `curated/`, `analytics/`, `reference/`, `pruebas/`. Los datos de Ciudad Paraíso están en `pruebas/itt_Ciudad_Paraiso/` e incluyen `6_Dimension_Educacion/` (matrícula/indicadores 2026) e `Infraestructura/`, que localmente estaban fuera de alcance.
+  - **Hoja de ruta de datos (medallón):** propuesta de arquitectura Bronze/Raw → Silver Global → Silver por Zona → Gold por Zona → BI/GIS/ML, documentada en `docs/08_estructura_aws_proceso_data_itt.md`. Correspondencia con capas S3: raw=Bronze, curated=Silver, analytics=Gold. Estado: propuesta en definición, no implementada.
 
 ## Estado actual
 
