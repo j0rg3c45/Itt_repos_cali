@@ -79,7 +79,7 @@
 
   <section id="mapa" class="panel">
     <div class="card">
-      <h2>Mapa interactivo (capas agregadas)</h2>
+      <h2>Mapa interactivo</h2>
       <iframe class="mapa" src="mapa.html" title="Mapa Ciudad Paraíso"></iframe>
     </div>
   </section>
@@ -90,43 +90,65 @@
 <script>
 let DATA = null, dt = null;
 
+// Idioma español inline (evita el fetch externo a language.url, que si falla
+// deja la tabla sin renderizar).
+const DT_ES = {
+  decimal: ",", thousands: ".",
+  processing: "Procesando...", lengthMenu: "Mostrar _MENU_ registros",
+  zeroRecords: "No se encontraron resultados", info: "Mostrando _START_ a _END_ de _TOTAL_",
+  infoEmpty: "Mostrando 0 a 0 de 0", infoFiltered: "(filtrado de _MAX_ en total)",
+  search: "Buscar:", loadingRecords: "Cargando...",
+  paginate: { first: "Primero", last: "Último", next: "Siguiente", previous: "Anterior" }
+};
+
+function mostrarError(msg) {
+  const box = document.getElementById('nota-privacidad');
+  if (box) { box.textContent = '⚠️ ' + msg; box.style.background = '#ffe2e2'; box.style.borderColor = '#ffb3b3'; }
+  console.error(msg);
+}
+
 function construirTabla(key) {
-  const t = DATA.tablas[key];
-  document.getElementById('tabla-titulo').textContent = t.titulo;
-  if (dt) { dt.destroy(); $('#tabla').empty(); }
-  const cols = t.columnas.map(c => ({ title: c }));
-  dt = $('#tabla').DataTable({
-    data: t.filas, columns: cols, responsive: true, pageLength: 10,
-    language: { url: 'https://cdn.datatables.net/plug-ins/1.13.8/i18n/es-ES.json' }
-  });
+  try {
+    const t = DATA.tablas[key];
+    document.getElementById('tabla-titulo').textContent = t.titulo;
+    if (dt) { dt.destroy(); $('#tabla').empty(); }
+    const cols = t.columnas.map(c => ({ title: String(c) }));
+    dt = $('#tabla').DataTable({
+      data: t.filas, columns: cols, responsive: true, pageLength: 10, language: DT_ES
+    });
+  } catch (e) { mostrarError('No se pudo construir la tabla: ' + e.message); }
 }
 
 function cargar() {
-  document.getElementById('h-zona').textContent = 'ITT ' + DATA.zona;
-  document.getElementById('h-meta').textContent =
-    `Periodo ${DATA.periodo} · Área ${DATA.area_ha} ha (${DATA.area_m2.toLocaleString('es')} m²)`;
-  document.getElementById('nota-privacidad').textContent = '🔒 ' + DATA.nota_privacidad;
+  try {
+    document.getElementById('h-zona').textContent = 'ITT ' + (DATA.zona || '');
+    const am2 = (DATA.area_m2 != null) ? Number(DATA.area_m2).toLocaleString('es') : '';
+    document.getElementById('h-meta').textContent =
+      'Periodo ' + (DATA.periodo || '') + ' · Área ' + (DATA.area_ha || '') + ' ha (' + am2 + ' m²)';
+    document.getElementById('nota-privacidad').textContent = '🔒 ' + (DATA.nota_privacidad || '');
 
-  // selector de tablas
-  const sel = document.getElementById('sel-tabla');
-  Object.keys(DATA.tablas).forEach(k => {
-    const o = document.createElement('option');
-    o.value = k; o.textContent = DATA.tablas[k].titulo; sel.appendChild(o);
-  });
-  sel.addEventListener('change', e => construirTabla(e.target.value));
-  construirTabla(Object.keys(DATA.tablas)[0]);
+    // selector + primera tabla
+    const sel = document.getElementById('sel-tabla');
+    const keys = Object.keys(DATA.tablas || {});
+    keys.forEach(k => {
+      const o = document.createElement('option');
+      o.value = k; o.textContent = DATA.tablas[k].titulo; sel.appendChild(o);
+    });
+    sel.addEventListener('change', e => construirTabla(e.target.value));
+    if (keys.length) construirTabla(keys[0]);
 
-  // galeria de graficos
-  const g = document.getElementById('galeria');
-  DATA.graficos.forEach(fig => {
-    const f = document.createElement('figure');
-    f.innerHTML = `<img src="${fig.archivo}" alt="${fig.titulo}" loading="lazy">
-                   <figcaption>${fig.titulo}</figcaption>`;
-    g.appendChild(f);
-  });
+    // galeria de graficos
+    const g = document.getElementById('galeria');
+    (DATA.graficos || []).forEach(fig => {
+      const f = document.createElement('figure');
+      f.innerHTML = '<img src="' + fig.archivo + '" alt="' + fig.titulo + '" loading="lazy">' +
+                    '<figcaption>' + fig.titulo + '</figcaption>';
+      g.appendChild(f);
+    });
 
-  document.getElementById('footer').textContent =
-    'Índice de Transformación Territorial · Datos agregados · Generado automáticamente';
+    document.getElementById('footer').textContent =
+      'Índice de Transformación Territorial · Datos agregados · Generado automáticamente';
+  } catch (e) { mostrarError('No se pudo cargar la información: ' + e.message); }
 }
 
 // tabs
@@ -140,7 +162,13 @@ document.querySelectorAll('nav.tabs button').forEach(b => {
   });
 });
 
-fetch('data.json').then(r => r.json()).then(d => { DATA = d; cargar(); });
+// Esperar a que el DOM esté listo antes de pedir los datos.
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('data.json?v=' + Date.now())
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status + ' al cargar data.json'); return r.json(); })
+    .then(d => { DATA = d; cargar(); })
+    .catch(e => mostrarError('No se pudo descargar data.json: ' + e.message));
+});
 </script>
 </body>
 </html>
