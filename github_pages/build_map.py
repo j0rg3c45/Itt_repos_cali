@@ -1,17 +1,18 @@
 """
 Genera el MAPA SEGURO para el sitio público (github_pages/site/mapa.html).
 
-Qué incluye (todo agregado / no sensible):
+Qué incluye:
   - Polígono real de la zona
-  - Red peatonal OpenStreetMap (líneas) + intersecciones
+  - Red peatonal OpenStreetMap (líneas)
+  - Censo arbóreo (patrimonio ambiental público)
   - Overlays NDVI 2023-2026 (vegetación)
-  - Mapa de calor de DENSIDAD de eventos agregados (sin marcadores por caso)
+  - Puntos de eventos por tipo: Homicidio, Hurto, VIF, Siniestro, Riña, SPA
 
-Qué NO incluye (privacidad por diseño):
-  - NINGÚN marcador individual de homicidios, hurtos, VIF, riñas, SPA ni siniestros
-  - NINGÚN popup con fecha/dato de caso
-Los eventos de seguridad/violencia solo se representan como densidad difuminada
-(heatmap), que no permite ubicar un caso concreto.
+Criterio de privacidad (definido por el usuario): de cada evento se publica SOLO la
+UBICACIÓN (punto) y el TIPO de delito. NUNCA se publican los demás atributos del
+registro (dirección exacta, fecha, sexo, edad, nacionalidad, placas, antecedentes,
+feminicidio, etc.). Esto se garantiza extrayendo únicamente la geometría del GeoJSON
+y asignando una etiqueta de tipo fija — las `properties` crudas no llegan al HTML.
 
 Uso:
     uv run python github_pages/build_map.py
@@ -24,7 +25,6 @@ from pathlib import Path
 import numpy as np
 import geopandas as gpd
 import folium
-from folium.plugins import HeatMap
 import matplotlib.cm as cm
 import rasterio
 from PIL import Image
@@ -39,23 +39,38 @@ CENSO = D / "5_Dimension_Entorno_Urbano" / "CENSO_ARBOREO_ciudad_Paraiso.geojson
 NDVI = {a: D / "5_Dimension_Entorno_Urbano" / "ciudad_Paraiso_ndvi" / f"ciudad_Paraiso_ndvi_{a}.tif"
         for a in [2023, 2024, 2025, 2026]}
 
-# Fuentes de eventos: SOLO se usan para construir el heatmap de densidad agregada.
-# Nunca se publican sus puntos como marcadores individuales.
-EVENTOS_DENSIDAD = {
-    "Hurtos":     D / "1_Dimension_Seguridad" / "DATIC_hurtos_2023_2026T1_poligono_ciudad_Paraiso.geojson",
-    "Siniestros": D / "3_Dimension_Movilidad" / "BD_SINIESTROS_2023_2026_COMUNA_BARRIO_84_poligono_ciudad_Paraiso.geojson",
+# ─────────────────────────────────────────────────────────────────────────────
+# CAPAS DE EVENTOS — se publican SOLO: ubicación (punto) + tipo de delito.
+#
+# REGLA DE PRIVACIDAD ESTRICTA: de cada registro se toma ÚNICAMENTE la geometría
+# (lat/lon) y se le asigna una etiqueta de TIPO fija definida aquí. NUNCA se pasan
+# las `properties` del GeoJSON crudo al mapa — esas columnas traen direccion exacta,
+# sexo, edad, nacionalidad, placas, antecedentes, feminicidio, etc. (datos sensibles).
+# El tooltip del punto muestra solo el tipo (p.ej. "Homicidio"), nada más.
+# ─────────────────────────────────────────────────────────────────────────────
+EVENTOS_PUNTOS = {
+    # etiqueta_tipo : (archivo, color, filtro_opcional_por_propiedad)
+    "Homicidio":  (D / "1_Dimension_Seguridad" / "DATIC_homicidios_2023_2026T1_poligono_ciudad_Paraiso.geojson", "darkred", None),
+    "Hurto":      (D / "1_Dimension_Seguridad" / "DATIC_hurtos_2023_2026T1_poligono_ciudad_Paraiso.geojson", "purple", None),
+    "VIF":        (D / "2_Dimensión_Cohesion_Social" / "DATIC_violencia_intrafamiliar_2023_2026T1_poligono_ciudad_Paraiso.geojson", "cadetblue", None),
+    "Siniestro":  (D / "3_Dimension_Movilidad" / "BD_SINIESTROS_2023_2026_COMUNA_BARRIO_84_poligono_ciudad_Paraiso.geojson", "orange", None),
 }
+# Comparendos: se separan por categoria del campo 'agrupado' (solo riñas y SPA).
+EVENTOS_COMPARENDOS = D / "1_Dimension_Seguridad" / "DATIC_comparendos_2023_2026T1_poligono_ciudad_Paraiso.geojson"
 
 
-def puntos_dentro(path, poly_wgs):
-    """Devuelve [[lat, lon], ...] de los puntos de una fuente, recortados al poligono.
-    Se usa SOLO para densidad agregada (heatmap), nunca como marcadores."""
+def coords_dentro(path, poly_wgs, filtro=None):
+    """Devuelve SOLO [(lat, lon), ...] de los puntos dentro del poligono.
+    Descarta por completo las properties (no se publican)."""
     if not path.exists():
         return []
     g = gpd.read_file(path).to_crs("EPSG:4326")
     g = g[g.geometry.geom_type == "Point"]
-    dentro = g[g.within(poly_wgs)]
-    return [[geom.y, geom.x] for geom in dentro.geometry]
+    if filtro is not None:
+        g = g[filtro(g)]
+    g = g[g.within(poly_wgs)]
+    # Se extrae UNICAMENTE la coordenada: ninguna columna/atributo viaja al mapa.
+    return [(geom.y, geom.x) for geom in g.geometry]
 
 
 def main():
@@ -73,9 +88,13 @@ def main():
         attr="Esri", name="Esri Satélite",
     ).add_to(m)
 
-    # Poligono de la zona
+    # Poligono de la zona — se publica SOLO la geometria (sin properties Id/area)
+    poligono_geom = {"type": "FeatureCollection", "features": [
+        {"type": "Feature", "properties": {}, "geometry": g.__geo_interface__}
+        for g in gdf_zona.geometry
+    ]}
     folium.GeoJson(
-        gdf_zona.__geo_interface__, name="Polígono Ciudad Paraíso",
+        poligono_geom, name="Polígono Ciudad Paraíso",
         style_function=lambda x: {"color": "#1B4F8A", "fillColor": "#2E7D32",
                                   "fillOpacity": 0.10, "weight": 2},
     ).add_to(m)
@@ -127,16 +146,39 @@ def main():
             name=f"NDVI {ano}", opacity=0.65, show=False,
         ).add_to(m)
 
-    # Heatmap de DENSIDAD agregada de eventos (sin marcadores individuales)
-    heat = []
-    for nombre, path in EVENTOS_DENSIDAD.items():
-        pts = puntos_dentro(path, poly)
-        heat.extend(pts)
-        print(f"Densidad {nombre}: {len(pts)} puntos agregados al heatmap")
-    if heat:
-        fg_heat = folium.FeatureGroup(name="Densidad de eventos (agregado)", show=True)
-        HeatMap(heat, radius=22, blur=18, min_opacity=0.3).add_to(fg_heat)
-        fg_heat.add_to(m)
+    # ── Capas de eventos: punto + tipo de delito, SIN ningun otro atributo ──────
+    def capa_puntos(etiqueta, coords, color, show=False):
+        fg = folium.FeatureGroup(name=f"{etiqueta} ({len(coords)})", show=show)
+        for lat, lon in coords:
+            folium.CircleMarker(
+                [lat, lon], radius=4, color=color, fill=True,
+                fill_color=color, fill_opacity=0.7, weight=1,
+                tooltip=etiqueta,   # SOLO el tipo; sin fecha/direccion/datos del caso
+            ).add_to(fg)
+        fg.add_to(m)
+
+    total = 0
+    for etiqueta, (path, color, filtro) in EVENTOS_PUNTOS.items():
+        coords = coords_dentro(path, poly, filtro)
+        capa_puntos(etiqueta, coords, color)
+        total += len(coords)
+        print(f"{etiqueta}: {len(coords)} puntos (solo ubicacion + tipo)")
+
+    # Comparendos -> Riñas y SPA como capas de tipo separadas
+    import pandas as pd
+    if EVENTOS_COMPARENDOS.exists():
+        gc = gpd.read_file(EVENTOS_COMPARENDOS).to_crs("EPSG:4326")
+        gc = gc[gc.geometry.geom_type == "Point"]
+        gc = gc[gc.within(poly)]
+        agr = gc["agrupado"].astype(str)
+        rinas = [(g.y, g.x) for g in gc[agr.str.startswith("RI")].geometry]
+        spa   = [(g.y, g.x) for g in gc[agr == "SUSTANCIAS PSICOACTIVAS"].geometry]
+        capa_puntos("Riña", rinas, "pink")
+        capa_puntos("SPA (sustancias psicoactivas)", spa, "beige")
+        total += len(rinas) + len(spa)
+        print(f"Riña: {len(rinas)} | SPA: {len(spa)} puntos (solo ubicacion + tipo)")
+
+    print(f"Total puntos publicados (solo ubicacion + tipo): {total}")
 
     folium.LayerControl(collapsed=False).add_to(m)
     out = SITE / "mapa.html"

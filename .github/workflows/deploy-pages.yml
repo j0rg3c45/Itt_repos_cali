@@ -49,10 +49,13 @@ jobs:
       - name: Generar tablas + galería (data.json, index.html)
         run: python github_pages/build_site.py
 
-      - name: Generar mapa seguro (mapa.html)
+      - name: Generar mapa (ubicación + tipo de evento)
         # Si la descarga OSM falla en el runner, el mapa se genera igual sin red peatonal.
         run: python github_pages/build_map.py
         continue-on-error: false
+
+      - name: Auditoría de privacidad (bloquea el deploy si hay fuga)
+        run: python github_pages/audit_privacy.py
 
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v3

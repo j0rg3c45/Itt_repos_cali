@@ -113,9 +113,10 @@ def main():
         "tablas": tablas,
         "graficos": graficos,
         "nota_privacidad": (
-            "Este sitio publica únicamente datos agregados (conteos anuales/trimestrales "
-            "y scores del Índice de Transformación Territorial). No contiene registros "
-            "individuales, datos personales ni ubicaciones de casos de seguridad o violencia."
+            "Las tablas y gráficos publican datos agregados (conteos anuales/trimestrales "
+            "y scores del ITT). El mapa muestra la ubicación de los eventos y su tipo "
+            "(homicidio, hurto, VIF, riña, SPA, siniestro) sin ningún otro dato: no se "
+            "publican direcciones, fechas, ni información personal de los casos."
         ),
     }
     (SITE / "data.json").write_text(
