@@ -199,6 +199,14 @@ Para responder bien sobre este repo, un agente debe leer en este orden:
 6. `notebooks/01_itt_roosevelt.ipynb`
 7. `notebooks/02_itt_avenida_ciudad_de_cali.ipynb`
 
+Para trabajo en la nube (AWS / datalake / API / pipeline de datos):
+
+8. `agent/context/arquitectura_aws_proceso_data.md` — arquitectura objetivo medallón + API (para futuras implementaciones).
+9. `docs/07_conexion_aws_calitrack.md` — conexión SSO, perfiles, nomenclatura de recursos y regla de autorización explícita.
+10. `docs/08_estructura_aws_proceso_data_itt.md` — hoja de ruta medallón (versión en docs).
+
+**Regla AWS crítica:** ninguna conexión ni comando contra AWS (conectar, leer el datalake, crear/editar/etiquetar recursos) se ejecuta sin autorización explícita del usuario en el momento.
+
 ## 10. Precauciones para otro agente
 
 - No asumir que todo notebook implementado ya esta metodologicamente homologado.
