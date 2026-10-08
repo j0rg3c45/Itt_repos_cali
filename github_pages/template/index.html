@@ -56,6 +56,13 @@
   footer { text-align:center; color:var(--gris); font-size:.78rem; padding:20px; }
   .selector { margin-bottom:10px; }
   .selector select { padding:6px 10px; border-radius:8px; border:1px solid #cfd8e3; }
+  .prosa { line-height:1.6; font-size:.92rem; color:#2b3a48; }
+  .prosa h3 { color:var(--azul); font-size:1rem; margin:18px 0 6px; }
+  .prosa ul, .prosa ol { padding-left:20px; }
+  .prosa li { margin:4px 0; }
+  .prosa code { background:#eef2f7; padding:1px 5px; border-radius:4px; font-size:.85em; }
+  .prosa .fuente { font-size:.8rem; color:var(--gris); margin-top:18px;
+                   border-top:1px solid #e3e9f0; padding-top:10px; }
 </style>
 </head>
 <body>
@@ -73,6 +80,7 @@
     <button data-tab="tablas" class="active">Tablas</button>
     <button data-tab="graficos">Gráficos</button>
     <button data-tab="mapa">Mapa</button>
+    <button data-tab="acerca">Acerca de</button>
   </nav>
 
   <section id="tablas" class="panel active">
@@ -94,6 +102,58 @@
     <div class="card">
       <h2>Mapa interactivo</h2>
       <iframe class="mapa" src="mapa.html" title="Mapa Ciudad Paraíso"></iframe>
+    </div>
+  </section>
+
+  <section id="acerca" class="panel">
+    <div class="card prosa">
+      <h2>Acerca de este sitio</h2>
+
+      <p>Este tablero publica los resultados del <strong>Índice de Transformación Territorial
+      (ITT)</strong> para la zona de renovación urbana <strong>Ciudad Paraíso</strong> (Comuna 3,
+      Cali): barrios San Pascual, El Calvario, San Juan Bosco y Santa Rosa. El polígono de análisis
+      mide <strong>33.70 ha</strong> (337.039,2 m²) y el periodo es <strong>2023–2026</strong>
+      (2026 parcial, no comparable).</p>
+
+      <h3>Qué contiene</h3>
+      <ul>
+        <li><strong>Tablas:</strong> indicadores agregados por año y trimestre (homicidios, hurtos,
+          siniestralidad, VIF, riñas, SPA, NDVI, arbolado, desarrollo económico) y los
+          <em>scores</em> del ITT por dimensión. Con búsqueda, orden y paginación.</li>
+        <li><strong>Gráficos:</strong> evolución del ITT, radar por dimensión y heatmaps/series
+          trimestrales. Toca un gráfico para ampliarlo.</li>
+        <li><strong>Mapa:</strong> ubicación de los eventos por tipo, red peatonal de OpenStreetMap,
+          nodos e intersecciones, mapa de calor de intersecciones y capas de vegetación NDVI
+          (2023–2026).</li>
+      </ul>
+
+      <h3>Las 5 dimensiones del ITT</h3>
+      <p>Seguridad (27%), Movilidad (22%), Cohesión Social / DesSocial (19%), Entorno Urbano (17%)
+      y Desarrollo Económico (15%). En esta zona, <strong>Entorno Urbano se calcula con datos
+      propios</strong> (NDVI satelital anual + censo arbóreo de 312 árboles), no con un proxy.
+      Educación se gestiona en otro repositorio y queda fuera de alcance aquí.</p>
+
+      <h3>Privacidad de los datos</h3>
+      <p>Las tablas y los gráficos publican <strong>solo datos agregados</strong> (conteos y
+      scores), sin registros individuales. En el mapa, cada evento (homicidio, hurto, VIF, riña,
+      SPA, siniestro) muestra <strong>únicamente su ubicación y su tipo</strong> — nunca se
+      publican la dirección, la fecha, ni información personal del caso. Un control automático
+      verifica, antes de cada publicación, que no se filtre ningún dato sensible.</p>
+
+      <h3>Cómo se construye y actualiza</h3>
+      <ol>
+        <li>El notebook <code>08_itt_ciudad_paraiso_5dim.ipynb</code> calcula el ITT y genera el
+          Excel consolidado y los gráficos.</li>
+        <li>Dos scripts arman el sitio: uno para las tablas y la galería, otro para el mapa.</li>
+        <li>Un control de privacidad revisa el mapa; si detecta datos sensibles, bloquea la
+          publicación.</li>
+        <li>Al subir cambios al repositorio, un flujo automático (GitHub Actions) regenera y
+          vuelve a publicar el sitio.</li>
+      </ol>
+
+      <p class="fuente">Metodología: Índice de Transformación Territorial · Datos: DATIC, Cámara de
+      Comercio, NDVI satelital y censo arbóreo municipal, recortados al polígono de la zona.
+      Sitio generado automáticamente desde el repositorio del proyecto.</p>
     </div>
   </section>
 </div>
