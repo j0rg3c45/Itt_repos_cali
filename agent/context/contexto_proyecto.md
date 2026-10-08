@@ -93,3 +93,14 @@ El agente debe diferenciar entre:
 - Workflow `.github/workflows/deploy-pages.yml`: regenera y despliega en Pages ante push a `master` (paths github_pages/outputs/data) o manual. Sparse-checkout incluye `data/Ciudad_Paraiso` completa.
 - Bug resuelto: `data.json` tenía NaN literales (datos faltantes 2026) → inválido para el navegador. Se corrigió con NaN→null y `json.dumps(allow_nan=False)`.
 - `.gitignore` ignora `github_pages/site/`, `cache/` (osmnx), PNG de la raíz, `_*.py` y `.venv/`.
+
+**Ajustes de UI/UX posteriores (misma sesión):**
+- Gráficos del sitio con **lightbox**: clic en una imagen la amplía sobre fondo oscuro (cierra con clic fuera, × o Escape).
+- Pestaña **"Acerca de"** en el sitio: resumen del proyecto, 5 dimensiones, metodología y nota de privacidad (visible en el propio GitHub Pages, no solo en el repo). README de `github_pages/` ampliado con el historial de construcción.
+- Títulos de los 12 gráficos tomados de los `suptitle` del notebook.
+- Error del sitio resuelto: DataTables usaba `language.url` (fetch externo frágil) → se pasó a i18n **inline**; carga robusta con `DOMContentLoaded`, manejo de errores visible y celdas vacías como "—".
+- Bug VIF: el sparse-checkout omitía `2_Dimensión_Cohesion_Social` (tilde) → mapa mostraba VIF(0). Se incluyó `data/Ciudad_Paraiso` completa.
+- Capas de eventos del mapa arrancan **visibles** (antes `show=False` dejaba el mapa vacío al abrir).
+- **Control de capas colapsable** (`LayerControl(collapsed=True)`): arranca como icono de capas y se despliega al tocarlo (notebook 08 y sitio).
+- Celda 1B: se reemplazaron los magics `!...{expr}` por `subprocess`/`shutil` — Colab no interpola `{' '.join(...)}` en una línea magic (daba `SyntaxError: invalid syntax (cell 2, line 21)`).
+- **Polígono de la zona: solo contorno, sin relleno** (`fill=False`) en el mapa — notebook 08 y sitio.
