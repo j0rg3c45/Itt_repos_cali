@@ -15,9 +15,11 @@ Uso:
     uv run python github_pages/build_site.py
 """
 import json
+import math
 import shutil
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent          # raiz del repo
@@ -65,17 +67,37 @@ def leer_tablas_agregadas():
         raise FileNotFoundError(
             f"No existe {XLSX}. Ejecuta primero el notebook para generar el Excel consolidado."
         )
+    def limpiar(v):
+        """NaN/NaT/inf -> None; numpy -> tipos nativos. JSON valido (sin NaN literal)."""
+        if v is None:
+            return None
+        try:
+            if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+                return None
+        except TypeError:
+            pass
+        if pd.isna(v):              # cubre NaT, pd.NA, np.nan
+            return None
+        if isinstance(v, (np.integer,)):
+            return int(v)
+        if isinstance(v, (np.floating,)):
+            f = float(v)
+            return None if (math.isnan(f) or math.isinf(f)) else f
+        if isinstance(v, np.bool_):
+            return bool(v)
+        return v
+
     tablas = {}
     for sheet in SHEETS_PUBLICABLES:
         try:
             df = pd.read_excel(XLSX, sheet_name=sheet)
         except ValueError:
             continue  # hoja ausente: se omite sin romper
-        df = df.where(pd.notnull(df), None)  # NaN -> None para JSON limpio
+        filas = [[limpiar(v) for v in fila] for fila in df.values.tolist()]
         tablas[sheet] = {
             "titulo": SHEET_TITULOS.get(sheet, sheet),
             "columnas": [str(c) for c in df.columns],
-            "filas": df.values.tolist(),
+            "filas": filas,
         }
     return tablas
 
@@ -131,8 +153,11 @@ def main():
             "publican direcciones, fechas, ni información personal de los casos."
         ),
     }
+    # allow_nan=False: si quedara algun NaN/inf, falla aqui (no genera JSON invalido
+    # que el navegador no puede parsear — causa del error "Unexpected token N / NaN").
     (SITE / "data.json").write_text(
-        json.dumps(datos, ensure_ascii=False, indent=1), encoding="utf-8"
+        json.dumps(datos, ensure_ascii=False, indent=1, allow_nan=False),
+        encoding="utf-8",
     )
 
     print("Datos agregados exportados:")

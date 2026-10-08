@@ -112,7 +112,10 @@ function construirTabla(key) {
     const t = DATA.tablas[key];
     document.getElementById('tabla-titulo').textContent = t.titulo;
     if (dt) { dt.destroy(); $('#tabla').empty(); }
-    const cols = t.columnas.map(c => ({ title: String(c) }));
+    const cols = t.columnas.map(c => ({
+      title: String(c),
+      render: d => (d === null || d === undefined || d === '') ? '—' : d
+    }));
     dt = $('#tabla').DataTable({
       data: t.filas, columns: cols, responsive: true, pageLength: 10, language: DT_ES
     });
