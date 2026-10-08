@@ -1,0 +1,71 @@
+name: Deploy GitHub Pages (ITT Ciudad Paraíso)
+
+# Publica el sitio estático de resultados agregados en GitHub Pages.
+# Se dispara al hacer push a master tocando datos/salidas/scripts del sitio,
+# o manualmente desde la pestaña Actions (workflow_dispatch).
+on:
+  push:
+    branches: [master]
+    paths:
+      - "github_pages/**"
+      - "outputs/itt_ciudad_paraiso/**"
+      - "data/Ciudad_Paraiso/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (solo lo necesario para el sitio)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            github_pages
+            outputs/itt_ciudad_paraiso
+            data/Ciudad_Paraiso/geojson_area_ciudad_Paraiso
+            data/Ciudad_Paraiso/5_Dimension_Entorno_Urbano
+            data/Ciudad_Paraiso/1_Dimension_Seguridad
+            data/Ciudad_Paraiso/3_Dimension_Movilidad
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias del generador
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas openpyxl geopandas rasterio folium osmnx pillow matplotlib
+
+      - name: Generar tablas + galería (data.json, index.html)
+        run: python github_pages/build_site.py
+
+      - name: Generar mapa seguro (mapa.html)
+        # Si la descarga OSM falla en el runner, el mapa se genera igual sin red peatonal.
+        run: python github_pages/build_map.py
+        continue-on-error: false
+
+      - name: Subir artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: github_pages/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

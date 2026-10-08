@@ -27,3 +27,6 @@ uv.lock
 
 # Cache de osmnx (grafos OSM descargados) y otros caches locales
 cache/
+
+# Sitio estatico generado (lo regenera el workflow de GitHub Actions)
+github_pages/site/
