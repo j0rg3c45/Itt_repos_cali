@@ -25,6 +25,7 @@ from pathlib import Path
 import numpy as np
 import geopandas as gpd
 import folium
+from folium.plugins import HeatMap
 import matplotlib.cm as cm
 import rasterio
 from PIL import Image
@@ -101,17 +102,38 @@ def main():
                                   "fillOpacity": 0.10, "weight": 2},
     ).add_to(m)
 
-    # Red peatonal OSM (opcional: requiere internet). No sensible.
+    # Red peatonal OSM + nodos + heatmap de intersecciones (opcional: requiere internet).
     try:
         import osmnx as ox
         G = ox.graph_from_polygon(poly, network_type="walk", simplify=False)
         nodes, edges = ox.graph_to_gdfs(G)
         edges = edges.to_crs("EPSG:4326")
+        nodes = nodes.to_crs("EPSG:4326")
+
+        # Red peatonal (lineas)
         folium.GeoJson(
             edges[["geometry"]].__geo_interface__, name="Red peatonal OSM",
             style_function=lambda x: {"color": "#2A9C8A", "weight": 2, "opacity": 0.7},
         ).add_to(m)
-        print(f"Red peatonal OSM: {len(edges)} tramos")
+
+        # Nodos / intersecciones (apagado por defecto)
+        fg_nodos = folium.FeatureGroup(name="Nodos (intersecciones)", show=False)
+        for geom in nodes.geometry:
+            folium.CircleMarker([geom.y, geom.x], radius=3, color="#E53935",
+                                fill=True, fill_opacity=0.9, weight=1).add_to(fg_nodos)
+        fg_nodos.add_to(m)
+
+        # Heatmap de intersecciones reales (street_count > 2)
+        if "street_count" in nodes.columns:
+            inter = nodes[nodes["street_count"] > 2]
+        else:
+            inter = nodes
+        heat_inter = [[geom.y, geom.x] for geom in inter.geometry]
+        fg_heat = folium.FeatureGroup(name="Mapa de calor — intersecciones", show=False)
+        HeatMap(heat_inter, radius=18, blur=15, min_opacity=0.3).add_to(fg_heat)
+        fg_heat.add_to(m)
+
+        print(f"Red peatonal OSM: {len(edges)} tramos | {len(nodes)} nodos | {len(heat_inter)} intersecciones")
     except Exception as e:
         print(f"[AVISO] red peatonal OSM omitida ({type(e).__name__}). El mapa se genera igual.")
 

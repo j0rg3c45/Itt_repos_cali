@@ -27,15 +27,20 @@ ASSETS = SITE / "assets"
 XLSX = ROOT / "outputs" / "itt_ciudad_paraiso" / "ITT_Ciudad_Paraiso_Consolidado.xlsx"
 
 # Graficos agregados seguros (PNG). Excluimos nada sensible: son figuras de series.
+# Títulos tomados de los suptitle/set_title del notebook 08 (sin el placeholder de zona).
 PNG_CHARTS = [
-    ("ciudad_paraiso_itt_global.png",            "Evolución del ITT global"),
-    ("ciudad_paraiso_radar_itt.png",             "Radar ITT por dimensión"),
-    ("ciudad_paraiso_heatmap_indicadores.png",   "Heatmap de indicadores (anual)"),
-    ("ciudad_paraiso_eu_ndvi_arbolado_card.png", "Entorno Urbano: NDVI + arbolado"),
-    ("ciudad_paraiso_evol_trim_seguridad.png",   "Seguridad — evolución trimestral"),
-    ("ciudad_paraiso_evol_trim_movilidad.png",   "Movilidad — evolución trimestral"),
-    ("ciudad_paraiso_evol_trim_dessocial.png",   "Cohesión social — evolución trimestral"),
-    ("ciudad_paraiso_de_evolucion_anual.png",    "Desarrollo económico — evolución anual"),
+    ("ciudad_paraiso_itt_global.png",            "ITT Global — Ciudad Paraíso"),
+    ("ciudad_paraiso_radar_itt.png",             "ITT por dimensión — Ciudad Paraíso"),
+    ("ciudad_paraiso_heatmap_indicadores.png",   "Indicadores crudos por dimensión — Ciudad Paraíso"),
+    ("ciudad_paraiso_eu_ndvi_arbolado_card.png", "Entorno Urbano · NDVI anual + censo arbóreo — Ciudad Paraíso"),
+    ("ciudad_paraiso_evol_trim_seguridad.png",   "Dimensión Seguridad — Evolución Trimestral | Ciudad Paraíso"),
+    ("ciudad_paraiso_evol_trim_movilidad.png",   "Dimensión Movilidad — Evolución Trimestral | Ciudad Paraíso"),
+    ("ciudad_paraiso_evol_trim_dessocial.png",   "Dimensión DesSocial (Cohesión) — Evolución Trimestral | Ciudad Paraíso"),
+    ("ciudad_paraiso_de_heatmap_trim.png",       "Dimensión Desarrollo Económico — Heatmap Trimestral | Ciudad Paraíso"),
+    ("ciudad_paraiso_de_evolucion_anual.png",    "Creación de Negocios Nuevos por Año | Ciudad Paraíso"),
+    ("ciudad_paraiso_heatmap_trim_seguridad.png", "Seguridad — Heatmap Trimestral | Ciudad Paraíso"),
+    ("ciudad_paraiso_heatmap_trim_movilidad.png", "Movilidad — Heatmap Trimestral | Ciudad Paraíso"),
+    ("ciudad_paraiso_heatmap_trim_dessocial.png", "Cohesión Social — Heatmap Trimestral | Ciudad Paraíso"),
 ]
 
 # Hojas del Excel que son AGREGADAS y seguras para publicar.
