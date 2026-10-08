@@ -91,9 +91,16 @@ def copiar_graficos():
 
 
 def main():
-    if SITE.exists():
-        shutil.rmtree(SITE)
-    SITE.mkdir(parents=True)
+    # Limpia la salida salvo mapa.html (lo genera build_map.py; evitamos borrarlo
+    # si ya existe, para que el orden de ejecucion de los dos scripts no importe).
+    SITE.mkdir(parents=True, exist_ok=True)
+    for item in SITE.iterdir():
+        if item.name == "mapa.html":
+            continue
+        if item.is_dir():
+            shutil.rmtree(item)
+        else:
+            item.unlink()
     ASSETS.mkdir(parents=True, exist_ok=True)
 
     tablas = leer_tablas_agregadas()

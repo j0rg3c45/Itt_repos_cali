@@ -157,10 +157,11 @@ def main():
             ).add_to(fg)
         fg.add_to(m)
 
+    # Las capas de eventos arrancan VISIBLES para que el mapa no se vea vacio al abrir.
     total = 0
     for etiqueta, (path, color, filtro) in EVENTOS_PUNTOS.items():
         coords = coords_dentro(path, poly, filtro)
-        capa_puntos(etiqueta, coords, color)
+        capa_puntos(etiqueta, coords, color, show=True)
         total += len(coords)
         print(f"{etiqueta}: {len(coords)} puntos (solo ubicacion + tipo)")
 
@@ -173,8 +174,8 @@ def main():
         agr = gc["agrupado"].astype(str)
         rinas = [(g.y, g.x) for g in gc[agr.str.startswith("RI")].geometry]
         spa   = [(g.y, g.x) for g in gc[agr == "SUSTANCIAS PSICOACTIVAS"].geometry]
-        capa_puntos("Riña", rinas, "pink")
-        capa_puntos("SPA (sustancias psicoactivas)", spa, "beige")
+        capa_puntos("Riña", rinas, "pink", show=True)
+        capa_puntos("SPA (sustancias psicoactivas)", spa, "beige", show=True)
         total += len(rinas) + len(spa)
         print(f"Riña: {len(rinas)} | SPA: {len(spa)} puntos (solo ubicacion + tipo)")
 
