@@ -98,8 +98,8 @@ def main():
     ]}
     folium.GeoJson(
         poligono_geom, name="Polígono Ciudad Paraíso",
-        style_function=lambda x: {"color": "#1B4F8A", "fillColor": "#2E7D32",
-                                  "fillOpacity": 0.10, "weight": 2},
+        style_function=lambda x: {"color": "#1B4F8A", "weight": 2.5,
+                                  "fill": False, "fillOpacity": 0},  # solo contorno
     ).add_to(m)
 
     # Red peatonal OSM + nodos + heatmap de intersecciones (opcional: requiere internet).
