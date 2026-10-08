@@ -43,3 +43,17 @@
 - Fuentes DATIC: `DATIC_homicidios_*` (campo `fechah` MM/DD/YYYY), `DATIC_hurtos_*`, `DATIC_comparendos_*`, `DATIC_violencia_intrafamiliar_*` (campo `fecha_hech` ISO).
 - CRS: poligono ESRI:103599 → reproyectado a EPSG:4326 en notebook. Comparendos de transito EPSG:9377 — no entra al calculo ITT.
 - Indicador contextual pendiente: Concentracion de vulnerabilidad activa = 54.1 por 1.000 hab (73 personas Sub PyE 2025 / ~1.349 hab). Solo 2025, sin serie — mantener como contexto, no implementado en ITT.
+
+## ITT Ciudad Paraíso (Comuna 3)
+
+- Estado: implementado y verificado (local con `uv` + Colab).
+- Notebook: `notebooks/08_itt_ciudad_paraiso_5dim.ipynb`
+- Unidad de analisis: poligono unico de la zona de renovacion urbana (San Pascual, El Calvario, San Juan Bosco, Santa Rosa). Area: 33.70 ha (337,039.2 m²).
+- Periodo: 2023-2026 (2026 parcial — cobertura incompleta en todas las fuentes; su nivel se marca "Parcial — no comparable").
+- Metodologia: `ref_min/ref_max` fijos; 5 dimensiones (Seguridad 27%, Movilidad 22%, DesSocial 19%, EntornoU 17%, DesEco 15%).
+- Entorno Urbano: **datos propios** (NO proxy). NDVI anual 2023-2026 (4 rasters) + censo arboreo (312 arboles, 303 vivos/nuevos). `score_entorno_u = mean(score_ndvi, score_arbolado)`.
+- Verificacion espacial: `geopandas.sjoin` contra el poligono real (los campos nom_barrio/comuna de las fuentes no son confiables en esta zona).
+- Educacion y Desarrollo: fuera de alcance de este repo (otro repositorio). DesSocial = solo VIF+Riñas+SPA.
+- Datos en repo: `data/Ciudad_Paraiso/` con subcarpetas 1-6 por dimension + `5_Dimension_Entorno_Urbano/` (censo + NDVI) + poligono (geojson y shape).
+- ITT resultante: 2023=44.1, 2024=55.5, 2025=58.5 (Consolidacion), 2026=81.4 (Parcial).
+- Publicacion: resultados en el sitio GitHub Pages (`github_pages/`, ver contexto_proyecto.md).

@@ -35,8 +35,21 @@
   table.dataTable { width:100% !important; font-size:.86rem; }
   .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }
   .grid figure { margin:0; }
-  .grid img { width:100%; height:auto; border-radius:8px; border:1px solid #e3e9f0; }
+  .grid img { width:100%; height:auto; border-radius:8px; border:1px solid #e3e9f0;
+              cursor:zoom-in; transition:transform .12s ease; }
+  .grid img:hover { transform:scale(1.01); box-shadow:0 2px 10px rgba(0,0,0,.12); }
   .grid figcaption { font-size:.82rem; color:var(--gris); margin-top:6px; text-align:center; }
+  /* Lightbox para ampliar gráficos */
+  #lightbox { position:fixed; inset:0; background:rgba(0,0,0,.88); display:none;
+              align-items:center; justify-content:center; z-index:1000; padding:24px;
+              flex-direction:column; cursor:zoom-out; }
+  #lightbox.open { display:flex; }
+  #lightbox img { max-width:96vw; max-height:86vh; width:auto; height:auto;
+                  border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,.5); background:#fff; }
+  #lightbox .lb-cap { color:#fff; margin-top:12px; font-size:.9rem; text-align:center; max-width:90vw; }
+  #lightbox .lb-close { position:absolute; top:16px; right:22px; color:#fff; font-size:2rem;
+                        line-height:1; cursor:pointer; font-weight:700; opacity:.85; }
+  #lightbox .lb-close:hover { opacity:1; }
   iframe.mapa { width:100%; height:70vh; border:0; border-radius:10px; }
   .privacidad { font-size:.8rem; color:var(--gris); background:#fff7e6;
                 border:1px solid #ffe2a8; border-radius:10px; padding:10px 12px; margin:12px 0; }
@@ -83,6 +96,12 @@
       <iframe class="mapa" src="mapa.html" title="Mapa Ciudad Paraíso"></iframe>
     </div>
   </section>
+</div>
+
+<div id="lightbox" role="dialog" aria-modal="true">
+  <span class="lb-close" title="Cerrar">×</span>
+  <img id="lb-img" src="" alt="">
+  <div class="lb-cap" id="lb-cap"></div>
 </div>
 
 <footer id="footer"></footer>
@@ -140,12 +159,13 @@ function cargar() {
     sel.addEventListener('change', e => construirTabla(e.target.value));
     if (keys.length) construirTabla(keys[0]);
 
-    // galeria de graficos
+    // galeria de graficos (clic en imagen -> lightbox ampliado)
     const g = document.getElementById('galeria');
     (DATA.graficos || []).forEach(fig => {
       const f = document.createElement('figure');
       f.innerHTML = '<img src="' + fig.archivo + '" alt="' + fig.titulo + '" loading="lazy">' +
                     '<figcaption>' + fig.titulo + '</figcaption>';
+      f.querySelector('img').addEventListener('click', () => abrirLightbox(fig.archivo, fig.titulo));
       g.appendChild(f);
     });
 
@@ -153,6 +173,18 @@ function cargar() {
       'Índice de Transformación Territorial · Datos agregados · Generado automáticamente';
   } catch (e) { mostrarError('No se pudo cargar la información: ' + e.message); }
 }
+
+// lightbox: ampliar graficos
+function abrirLightbox(src, cap) {
+  const lb = document.getElementById('lightbox');
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-img').alt = cap || '';
+  document.getElementById('lb-cap').textContent = cap || '';
+  lb.classList.add('open');
+}
+function cerrarLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+document.getElementById('lightbox').addEventListener('click', cerrarLightbox);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarLightbox(); });
 
 // tabs
 document.querySelectorAll('nav.tabs button').forEach(b => {
