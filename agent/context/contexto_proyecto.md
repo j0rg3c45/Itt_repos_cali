@@ -19,6 +19,8 @@ Calcular el ITT para zonas de intervencion urbana en Cali y comparar resultados 
 - Repo GitHub: `https://github.com/j0rg3c45/Itt_repos_cali` (rama `master`). Los notebooks clonan este repo en Colab.
 - Entorno local reproducible con `uv` (`.venv` + `requirements.txt`). Dependencias clave: geopandas, rasterio, folium, osmnx, pillow, matplotlib, seaborn, openpyxl.
 - **Sitio público (GitHub Pages):** `https://j0rg3c45.github.io/Itt_repos_cali/` — publica resultados de Ciudad Paraíso (tablas + gráficos + mapa). Generado por `github_pages/` y desplegado con GitHub Actions.
+- **AWS / datalake:** el proyecto tiene recursos en AWS (datalake S3 `aca-prod-calitrack-itt-datalake`, cuenta 285757764705) con acceso vía SSO. Protocolo de conexión y perfiles documentados en `docs/07_conexion_aws_calitrack.md`. Para el datalake usar el perfil `calitrack` o `calitrack-aca` (el perfil `default` da AccessDenied). Región `us-east-1`.
+  - **REGLA (autorización explícita):** NINGUNA conexión ni comando contra AWS (`aws sso login`, `aws s3 ...`, `sts`, cualquier llamada a la cuenta/datalake) se ejecuta sin autorización explícita del usuario en el momento. El agente debe pedir confirmación antes de correr cualquier comando AWS, aunque las credenciales ya estén activas.
 
 ## Estado actual
 
