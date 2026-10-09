@@ -22,6 +22,19 @@ Autenticación por **IAM Identity Center (SSO)** — no se usan llaves estática
 | Región | us-east-1 |
 | Autenticación | IAM Identity Center (SSO), sin llaves estáticas |
 
+**Cuenta de trabajo del proyecto (CaliTrack / datalake ITT):**
+
+| Dato | Valor |
+|---|---|
+| ID de cuenta | **285757764705** |
+| Rol SSO | `PS-ACA-CaliTrack` |
+| Perfil AWS CLI | `calitrack-aca` |
+| ARN de identidad (confirmado) | `arn:aws:sts::285757764705:assumed-role/AWSReservedSSO_PS-ACA-CaliTrack_fd49340229c58266/gobiernodedatos.jorgecas@gmail.com` |
+
+> Esta es la cuenta donde vive el datalake `aca-prod-calitrack-itt-datalake`. Para
+> conectarse a ella usar siempre `--profile calitrack-aca` (o `calitrack`). La cuenta
+> `802479323033` (perfil `default`) es otra y NO tiene acceso al datalake.
+
 ## 2. Perfiles configurados (`~/.aws/config`)
 
 | Perfil | Cuenta | Rol SSO | Para qué |
