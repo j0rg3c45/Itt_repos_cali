@@ -57,3 +57,22 @@
 - Datos en repo: `data/Ciudad_Paraiso/` con subcarpetas 1-6 por dimension + `5_Dimension_Entorno_Urbano/` (censo + NDVI) + poligono (geojson y shape).
 - ITT resultante: 2023=44.1, 2024=55.5, 2025=58.5 (Consolidacion), 2026=81.4 (Parcial).
 - Publicacion: resultados en el sitio GitHub Pages (`github_pages/`, ver contexto_proyecto.md).
+
+## ITT Corredor San Fernando / Yawa (Comuna 19)
+
+- Estado: implementado y verificado end-to-end local (`uv`). Zona 09.
+- Notebook: `notebooks/09_itt_Corredor_San_Fernando_Yawa.ipynb`
+- Unidad de analisis: poligono unico (MultiPolygon). Area: **265.33 ha** (2,653,275 m²) — zona grande.
+- Periodo: 2023-2026. Cobertura real: seguridad/cohesion hasta **2026-Q3**, movilidad hasta **Q2**.
+  2026 marcado "Parcial (no comparable)" (falta Q4).
+- Metodologia: `ref_min/ref_max` fijos; 5 dimensiones (27/22/19/17/15). Umbrales calibrados con
+  Barrio Obrero como guia, escalados al rango real (hurtos 800-2000, rinas 400-1100, etc.).
+- Fuentes DATIC en DOS archivos por indicador (historico `_2023_2026T1` + extension
+  `_04012026_09302026`/`_26092026`) que el notebook UNE. Columna fecha: `fecha_hecho`
+  (hurtos/comparendos/VIF), `fechah` MM/DD/YYYY (homicidios), `Fecha` (siniestros).
+  Carpeta cohesion SIN tilde: `2_Dimension_Cohesion_Social`.
+- **Entorno Urbano y Desarrollo Economico: SIN datos aun -> 0 (vacio), pendientes.**
+  Educacion fuera de alcance. DesSocial = VIF+Rinas+SPA.
+- Datos 100% dentro del poligono (ya vienen pre-filtrados; el sjoin lo confirma).
+- ITT resultante: 2023=28.0, 2024=37.9, 2025=32.0 (Activacion), 2026=64.3 (Parcial).
+  El ITT esta deprimido mientras EntornoU+DesEco (32% del peso) esten en 0 — subira al cargar NDVI/censo y registro mercantil.

@@ -26,6 +26,30 @@ Calcular el ITT para zonas de intervencion urbana en Cali y comparar resultados 
   - **Carpeta de trabajo AWS:** `Aws_proceso/` (nivel raíz del repo) aloja TODO el trabajo del ITT en AWS: `pipeline/`, `lambdas/`, `api/`, `infra/`, `notebooks_exploracion/`. Ver `Aws_proceso/README.md`.
   - **Hoja de ruta de datos (medallón):** propuesta de arquitectura Bronze/Raw → Silver Global → Silver por Zona → Gold por Zona → BI/GIS/ML, documentada en `docs/08_estructura_aws_proceso_data_itt.md`. Correspondencia con capas S3: raw=Bronze, curated=Silver, analytics=Gold. Estado: propuesta en definición, no implementada.
 
+## Notebooks marcados como confiables (trusted)
+
+Todos los notebooks de `notebooks/` tienen `metadata.trusted = true` (notebook y cada celda)
+para que Jupyter/JupyterLab/nbviewer carguen los mapas folium sin el aviso "Make this Notebook
+Trusted". NOTA: GitHub web NO ejecuta el JS embebido (muestra notebooks estáticos por seguridad),
+así que los mapas interactivos solo se ven en Jupyter/nbviewer/Colab, no en la vista de GitHub.
+Al re-ejecutar o guardar un notebook, mantener `trusted=true`.
+
+## Seguimiento sesión 2026-10 (Zona 09 — Corredor San Fernando / Yawa)
+
+- Nueva zona: `notebooks/09_itt_Corredor_San_Fernando_Yawa.ipynb`, Comuna 19, polígono único
+  de 265.33 ha. Clon de 08 (Ciudad Paraíso) con las mejoras, adaptado.
+- **Datos reales 2023 → 2026-Q3** en seguridad (homicidios/hurtos/comparendos), movilidad
+  (siniestros, hasta Q2) y cohesión (VIF). Cada fuente DATIC viene en DOS archivos (histórico
+  `_2023_2026T1` + extensión `_04012026_09302026`/`_26092026`) que el notebook UNE en una serie.
+- Columna de fecha real: `fecha_hecho` (hurtos/comparendos/VIF), `fechah` MM/DD/YYYY (homicidios),
+  `Fecha` (siniestros). Carpeta de cohesión SIN tilde: `2_Dimension_Cohesion_Social`.
+- Umbrales `ref_min/ref_max` con Barrio Obrero como GUIA, escalados al rango real de la zona
+  (hurtos 800-2000, riñas 400-1100, siniestralidad 80-240, etc.).
+- **Entorno Urbano y Desarrollo Económico: sin datos → quedan en 0 (vacío), pendientes.**
+  2026 marcado "Parcial (no comparable)" (falta Q4). ITT: 2023=28.0, 2024=37.9, 2025=32.0, 2026=64.3.
+- Carga tolerante a fuentes faltantes: `load_gj` acepta ruta o lista y omite las ausentes;
+  `procesar`/`verificar_espacial`/EU-Card no rompen sin datos. Verificado end-to-end local con `uv`.
+
 ## Estado actual
 
 - `01_itt_roosevelt.ipynb`: implementado con estructura homologada a Barrio Obrero y `ref_min/ref_max` fijos. Periodo 2023-2025.
