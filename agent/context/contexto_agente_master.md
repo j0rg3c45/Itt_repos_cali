@@ -16,6 +16,12 @@ La metodologia vigente del proyecto exige:
 - No usar min-max relativo calculado desde la propia muestra de la zona cuando el territorio es pequeno o los conteos son bajos.
 - Diferenciar entre datos reales, referentes provisionales y resultados efectivamente calculados.
 
+**Principio de datos faltantes (regla del usuario):** donde NO hay dato se deja VACIO
+(`NaN`), nunca se inventa ni se rellena con estimaciones. Donde SI hay dato, se usa el
+dato real. Un trimestre/año sin fuente queda como `NaN` en las series y se marca
+"Parcial (no comparable)" si el periodo esta incompleto. El `nanmean` del ITT ya soporta
+esto de forma nativa (promedia solo los componentes con dato).
+
 La fuente metodologica principal y prioritaria es:
 
 - `agent/knowledge_base/Guia_ITT_Metodologia_Notebook.md`
