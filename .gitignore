@@ -33,3 +33,6 @@ github_pages/site/
 
 # Basura de Windows
 desktop.ini
+
+# Contexto interno del agente (no se versiona en el repo publico)
+agent/
