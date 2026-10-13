@@ -30,3 +30,6 @@ cache/
 
 # Sitio estatico generado (lo regenera el workflow de GitHub Actions)
 github_pages/site/
+
+# Basura de Windows
+desktop.ini
