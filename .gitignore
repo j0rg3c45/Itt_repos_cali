@@ -36,3 +36,6 @@ desktop.ini
 
 # Contexto interno del agente (no se versiona en el repo publico)
 agent/
+
+# Registro mercantil crudo de ciudad completa (284MB, va al datalake raw/, no al repo)
+data/referencia/economico/20260929-Reporte General Registro Mercantil.csv
