@@ -43,3 +43,8 @@ data/referencia/economico/20260929-Reporte General Registro Mercantil.csv
 data/itt_barrio_obrero/4_Desarrollo_Economico/20260929-Reporte General Registro Mercantil.csv
 *20260929-Reporte General Registro Mercantil.csv
 data/Educacion_2026/
+
+# Data cruda de ciudad completa de San Fernando (~2.8 GB: Camara de Comercio, SIMAT/SIMPADE,
+# shapefiles de infraestructura, etc.). Se procesa a archivos livianos en las carpetas de
+# dimension (consolidados JSON, geojson filtrados al poligono). La carpeta cruda NO va al repo.
+data/itt_Corredor_San_fernando_Yawa/data_2025_2026/
