@@ -172,15 +172,24 @@ Punteros globales (fuera de la fecha, para localizar el job activo):
 
 ---
 
-## 9. Validacion y estado
+## 9. Validacion y resultado final
 
 - **Validacion local** de lectura + normalizacion sobre muestra (8.322 registros Cali):
   96% geocodificables. Ejemplos correctos:
   - `CR 108  44   75 AP 3  505` -> `CR 108 # 44 - 75`
   - `CALLE. 43 NRO. 111 - 50 INTERIOR 101...` -> `CL 43 # 111 - 50`
   - `VIA CALI - JAMUNDI KM 12...` -> marcada como NO geocodificable (rural), correcto.
-- **Job 2026-10-09:** `20261009T164946-47e596fc`, 9 lotes, 103.030 direcciones unicas.
-  Avance observado: 3.6% -> 23.6% -> 47.9% (en progreso).
+- **Corrida final 2026-10-14** (job `20261014T091354-2302f577`): COMPLETED.
+  - Registros totales (Cali): 501.730
+  - Geocodificados: 379.963 (75,7%)
+  - GEOCODIFICABLE_SIN_COORD: 99.925 | NO_GEOCODIFICABLE: 21.729 | SIN_DIRECCION: 113
+  - Salida en `curated/camara_de_comercio/2026-10-14/`.
+- **IMPORTANTE - columnas:** el archivo `camara_comercio_geocodificado.csv` conserva LAS 41
+  COLUMNAS ORIGINALES de la data del Registro Mercantil + 11 columnas de geocodificacion =
+  **52 columnas**. Controlado por la variable de entorno `CONSERVAR_TODAS_COLUMNAS` (default
+  true). Tamaño del CSV: ~204 MB. Memoria de la Lambda: 10.240 MB (10 GB).
+- La corrida previa (2026-10-09, job 20261009T...47e596fc) genero el mismo volumen pero solo
+  con 11 columnas; fue reemplazada por esta version completa.
 
 ---
 
