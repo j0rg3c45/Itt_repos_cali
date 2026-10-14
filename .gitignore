@@ -37,5 +37,8 @@ desktop.ini
 # Contexto interno del agente (no se versiona en el repo publico)
 agent/
 
-# Registro mercantil crudo de ciudad completa (284MB, va al datalake raw/, no al repo)
+# Registro mercantil crudo de ciudad completa (~280MB, va al datalake raw/, no al repo).
+# El notebook usa el consolidado ligero registro_mercantil_BO_2023_2026_consolidado.json (si versionado).
 data/referencia/economico/20260929-Reporte General Registro Mercantil.csv
+data/itt_barrio_obrero/4_Desarrollo_Economico/20260929-Reporte General Registro Mercantil.csv
+*20260929-Reporte General Registro Mercantil.csv
