@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ITT Corredor San Fernando (Yawa) — Resultados</title>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+<style>
+  :root { --azul:#1B4F8A; --verde:#2E7D32; --bg:#F4F6F9; --card:#fff; --gris:#5b6b7b; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         background:var(--bg); color:#1b2631; }
+  header { background:linear-gradient(100deg,var(--azul),#2A9C8A); color:#fff; padding:22px 18px; }
+  header h1 { margin:0 0 4px; font-size:1.35rem; }
+  header .meta { font-size:.85rem; opacity:.92; }
+  .wrap { max-width:1100px; margin:0 auto; padding:16px; }
+  nav.tabs { display:flex; flex-wrap:wrap; gap:6px; margin:16px 0; }
+  nav.tabs button { border:0; background:#e3e9f0; color:var(--azul); padding:9px 14px;
+                    border-radius:999px; cursor:pointer; font-size:.9rem; font-weight:600; }
+  nav.tabs button.active { background:var(--azul); color:#fff; }
+  .panel { display:none; }
+  .panel.active { display:block; }
+  .card { background:var(--card); border:1px solid #e3e9f0; border-radius:12px;
+          padding:16px; margin-bottom:16px; box-shadow:0 1px 3px rgba(0,0,0,.04); }
+  .card h2 { margin:0 0 10px; font-size:1.05rem; color:var(--azul); }
+  table.dataTable { width:100% !important; font-size:.86rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }
+  .grid figure { margin:0; }
+  .grid img { width:100%; height:auto; border-radius:8px; border:1px solid #e3e9f0;
+              cursor:zoom-in; transition:transform .12s ease; }
+  .grid img:hover { transform:scale(1.01); box-shadow:0 2px 10px rgba(0,0,0,.12); }
+  .grid figcaption { font-size:.82rem; color:var(--gris); margin-top:6px; text-align:center; }
+  #lightbox { position:fixed; inset:0; background:rgba(0,0,0,.88); display:none;
+              align-items:center; justify-content:center; z-index:1000; padding:24px;
+              flex-direction:column; cursor:zoom-out; }
+  #lightbox.open { display:flex; }
+  #lightbox img { max-width:96vw; max-height:86vh; width:auto; height:auto;
+                  border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,.5); background:#fff; }
+  #lightbox .lb-cap { color:#fff; margin-top:12px; font-size:.9rem; text-align:center; max-width:90vw; }
+  #lightbox .lb-close { position:absolute; top:16px; right:22px; color:#fff; font-size:2rem;
+                        line-height:1; cursor:pointer; font-weight:700; opacity:.85; }
+  #lightbox .lb-close:hover { opacity:1; }
+  iframe.mapa { width:100%; height:70vh; border:0; border-radius:10px; }
+  .privacidad { font-size:.8rem; color:var(--gris); background:#fff7e6;
+                border:1px solid #ffe2a8; border-radius:10px; padding:10px 12px; margin:12px 0; }
+  footer { text-align:center; color:var(--gris); font-size:.78rem; padding:20px; }
+  .selector { margin-bottom:10px; }
+  .selector select { padding:6px 10px; border-radius:8px; border:1px solid #cfd8e3; }
+  .prosa { line-height:1.6; font-size:.92rem; color:#2b3a48; }
+  .prosa h3 { color:var(--azul); font-size:1rem; margin:18px 0 6px; }
+  .prosa ul, .prosa ol { padding-left:20px; }
+  .prosa li { margin:4px 0; }
+  .prosa code { background:#eef2f7; padding:1px 5px; border-radius:4px; font-size:.85em; }
+  .prosa .fuente { font-size:.8rem; color:var(--gris); margin-top:18px;
+                   border-top:1px solid #e3e9f0; padding-top:10px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1 id="h-zona">ITT Corredor San Fernando (Yawa)</h1>
+    <div class="meta" id="h-meta"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="privacidad" id="nota-privacidad"></div>
+
+  <nav class="tabs">
+    <button data-tab="tablas" class="active">Tablas</button>
+    <button data-tab="graficos">Gráficos</button>
+    <button data-tab="mapa">Mapa</button>
+    <button data-tab="acerca">Acerca de</button>
+  </nav>
+
+  <section id="tablas" class="panel active">
+    <div class="card selector">
+      <label for="sel-tabla"><strong>Indicador:</strong></label>
+      <select id="sel-tabla"></select>
+    </div>
+    <div class="card">
+      <h2 id="tabla-titulo"></h2>
+      <table id="tabla" class="display responsive nowrap" style="width:100%"></table>
+    </div>
+  </section>
+
+  <section id="graficos" class="panel">
+    <div class="grid" id="galeria"></div>
+  </section>
+
+  <section id="mapa" class="panel">
+    <div class="card">
+      <h2>Mapa interactivo</h2>
+      <iframe class="mapa" src="mapa.html" title="Mapa Corredor San Fernando"></iframe>
+    </div>
+  </section>
+
+  <section id="acerca" class="panel">
+    <div class="card prosa">
+      <h2>Acerca de este sitio</h2>
+
+      <p>Este tablero publica los resultados del <strong>Índice de Transformación Territorial
+      (ITT)</strong> para el <strong>Corredor San Fernando (Yawa)</strong>, Comuna 19 de Cali.
+      El polígono de análisis mide <strong>265,33 ha</strong> y el periodo es
+      <strong>2023–2026</strong> (2026 con datos a la fecha: seguridad y cohesión hasta el tercer
+      trimestre, movilidad hasta el segundo).</p>
+
+      <h3>Qué contiene</h3>
+      <ul>
+        <li><strong>Tablas:</strong> indicadores agregados por año y trimestre (homicidios, hurtos,
+          siniestralidad, VIF, riñas, SPA, NDVI, arbolado, desarrollo económico, educación) y los
+          <em>scores</em> del ITT por dimensión. Incluye la comparación por subzonas.</li>
+        <li><strong>Gráficos:</strong> evolución del ITT, radar por dimensión, heatmaps/series
+          trimestrales y comparación entre subzonas. Toca un gráfico para ampliarlo.</li>
+        <li><strong>Mapa:</strong> polígono y subzonas, red peatonal de OpenStreetMap, censo
+          arbóreo, vegetación NDVI (2023–2026) y eventos por tipo.</li>
+      </ul>
+
+      <h3>Las 5 dimensiones del ITT</h3>
+      <p>Seguridad (27%), Movilidad (22%), Cohesión Social + Educación / DesSocial (19%), Entorno
+      Urbano (17%) y Desarrollo Económico (15%). En esta zona, <strong>Entorno Urbano se calcula
+      con datos propios</strong> (NDVI satelital anual + censo arbóreo), <strong>Educación</strong>
+      con el IE Liceo Departamental y <strong>Desarrollo Económico</strong> con el registro
+      mercantil de Cámara de Comercio filtrado al polígono.</p>
+
+      <h3>Privacidad de los datos</h3>
+      <p>Las tablas y los gráficos publican <strong>solo datos agregados</strong> (conteos y
+      scores), sin registros individuales ni datos de negocios o del colegio. En el mapa, los
+      eventos de seguridad y movilidad (homicidio, hurto, siniestro, riña, SPA) muestran
+      <strong>únicamente su ubicación y su tipo</strong>. Los casos de <strong>violencia
+      intrafamiliar (VIF) y de género (VBG) se publican SOLO como mapa de calor</strong>, nunca
+      como puntos individuales, para proteger la identidad de las víctimas en una zona pequeña.
+      Un control automático verifica, antes de cada publicación, que no se filtre ningún dato
+      sensible.</p>
+
+      <h3>Cómo se construye y actualiza</h3>
+      <ol>
+        <li>El notebook <code>09_itt_Corredor_San_Fernando_Yawa.ipynb</code> calcula el ITT y
+          genera el Excel consolidado y los gráficos.</li>
+        <li>Dos scripts arman el sitio: uno para las tablas y la galería, otro para el mapa.</li>
+        <li>Un control de privacidad revisa el mapa; si detecta datos sensibles o VIF/VBG como
+          puntos, bloquea la publicación.</li>
+      </ol>
+
+      <p class="fuente">Metodología: Índice de Transformación Territorial · Datos: DATIC, Cámara de
+      Comercio, Secretaría de Educación, NDVI satelital y censo arbóreo municipal, recortados al
+      polígono de la zona. Sitio generado automáticamente desde el repositorio del proyecto.</p>
+    </div>
+  </section>
+</div>
+
+<div id="lightbox" role="dialog" aria-modal="true">
+  <span class="lb-close" title="Cerrar">×</span>
+  <img id="lb-img" src="" alt="">
+  <div class="lb-cap" id="lb-cap"></div>
+</div>
+
+<footer id="footer"></footer>
+
+<script>
+let DATA = null, dt = null;
+const DT_ES = {
+  decimal: ",", thousands: ".",
+  processing: "Procesando...", lengthMenu: "Mostrar _MENU_ registros",
+  zeroRecords: "No se encontraron resultados", info: "Mostrando _START_ a _END_ de _TOTAL_",
+  infoEmpty: "Mostrando 0 a 0 de 0", infoFiltered: "(filtrado de _MAX_ en total)",
+  search: "Buscar:", loadingRecords: "Cargando...",
+  paginate: { first: "Primero", last: "Último", next: "Siguiente", previous: "Anterior" }
+};
+function mostrarError(msg) {
+  const box = document.getElementById('nota-privacidad');
+  if (box) { box.textContent = '⚠️ ' + msg; box.style.background = '#ffe2e2'; box.style.borderColor = '#ffb3b3'; }
+  console.error(msg);
+}
+function construirTabla(key) {
+  try {
+    const t = DATA.tablas[key];
+    document.getElementById('tabla-titulo').textContent = t.titulo;
+    if (dt) { dt.destroy(); $('#tabla').empty(); }
+    const cols = t.columnas.map(c => ({
+      title: String(c),
+      render: d => (d === null || d === undefined || d === '') ? '—' : d
+    }));
+    dt = $('#tabla').DataTable({ data: t.filas, columns: cols, responsive: true, pageLength: 10, language: DT_ES });
+  } catch (e) { mostrarError('No se pudo construir la tabla: ' + e.message); }
+}
+function cargar() {
+  try {
+    document.getElementById('h-zona').textContent = 'ITT ' + (DATA.zona || '');
+    const am2 = (DATA.area_m2 != null) ? Number(DATA.area_m2).toLocaleString('es') : '';
+    document.getElementById('h-meta').textContent =
+      'Periodo ' + (DATA.periodo || '') + ' · Área ' + (DATA.area_ha || '') + ' ha (' + am2 + ' m²)';
+    document.getElementById('nota-privacidad').textContent = '🔒 ' + (DATA.nota_privacidad || '');
+    const sel = document.getElementById('sel-tabla');
+    const keys = Object.keys(DATA.tablas || {});
+    keys.forEach(k => { const o = document.createElement('option'); o.value = k; o.textContent = DATA.tablas[k].titulo; sel.appendChild(o); });
+    sel.addEventListener('change', e => construirTabla(e.target.value));
+    if (keys.length) construirTabla(keys[0]);
+    const g = document.getElementById('galeria');
+    (DATA.graficos || []).forEach(fig => {
+      const f = document.createElement('figure');
+      f.innerHTML = '<img src="' + fig.archivo + '" alt="' + fig.titulo + '" loading="lazy">' +
+                    '<figcaption>' + fig.titulo + '</figcaption>';
+      f.querySelector('img').addEventListener('click', () => abrirLightbox(fig.archivo, fig.titulo));
+      g.appendChild(f);
+    });
+    document.getElementById('footer').textContent =
+      'Índice de Transformación Territorial · Datos agregados · Generado automáticamente';
+  } catch (e) { mostrarError('No se pudo cargar la información: ' + e.message); }
+}
+function abrirLightbox(src, cap) {
+  const lb = document.getElementById('lightbox');
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-img').alt = cap || '';
+  document.getElementById('lb-cap').textContent = cap || '';
+  lb.classList.add('open');
+}
+function cerrarLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+document.getElementById('lightbox').addEventListener('click', cerrarLightbox);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarLightbox(); });
+document.querySelectorAll('nav.tabs button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('nav.tabs button').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById(b.dataset.tab).classList.add('active');
+    if (dt) dt.columns.adjust().responsive.recalc();
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('data.json?v=' + Date.now())
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status + ' al cargar data.json'); return r.json(); })
+    .then(d => { DATA = d; cargar(); })
+    .catch(e => mostrarError('No se pudo descargar data.json: ' + e.message));
+});
+</script>
+</body>
+</html>

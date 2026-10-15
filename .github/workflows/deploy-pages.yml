@@ -1,15 +1,20 @@
-name: Deploy GitHub Pages (ITT Ciudad Paraíso)
+name: Deploy GitHub Pages (ITT Cali — Ciudad Paraíso + San Fernando)
 
-# Publica el sitio estático de resultados agregados en GitHub Pages.
-# Se dispara al hacer push a master tocando datos/salidas/scripts del sitio,
-# o manualmente desde la pestaña Actions (workflow_dispatch).
+# Publica los sitios estáticos de resultados agregados en GitHub Pages.
+# GitHub Pages sirve UN solo artefacto por repo: Ciudad Paraíso va en la raíz y
+# Corredor San Fernando en el subdirectorio /san-fernando/.
+# Se dispara al hacer push a master tocando datos/salidas/scripts de cualquiera de
+# los dos sitios, o manualmente desde la pestaña Actions (workflow_dispatch).
 on:
   push:
     branches: [master]
     paths:
       - "github_pages/**"
+      - "github_pages_san_fernando/**"
       - "outputs/itt_ciudad_paraiso/**"
+      - "outputs/itt_corredor_san_fernando/**"
       - "data/Ciudad_Paraiso/**"
+      - "data/itt_Corredor_San_fernando_Yawa/**"
   workflow_dispatch: {}
 
 permissions:
@@ -25,16 +30,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout (solo lo necesario para el sitio)
+      - name: Checkout (solo lo necesario para ambos sitios)
         uses: actions/checkout@v4
         with:
-          # Se incluye TODA data/Ciudad_Paraiso (~11 MB) en vez de listar subcarpetas:
-          # evita que falte alguna (p.ej. "2_Dimensión_Cohesion_Social" con tilde, que
-          # contiene VIF) y simplifica el mantenimiento.
           sparse-checkout: |
             github_pages
+            github_pages_san_fernando
             outputs/itt_ciudad_paraiso
+            outputs/itt_corredor_san_fernando
             data/Ciudad_Paraiso
+            data/itt_Corredor_San_fernando_Yawa
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -46,21 +51,34 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl geopandas rasterio folium osmnx pillow matplotlib
 
-      - name: Generar tablas + galería (data.json, index.html)
+      # ── Ciudad Paraíso (raíz del sitio) ──
+      - name: CP · tablas + galería
         run: python github_pages/build_site.py
-
-      - name: Generar mapa (ubicación + tipo de evento)
-        # Si la descarga OSM falla en el runner, el mapa se genera igual sin red peatonal.
+      - name: CP · mapa
         run: python github_pages/build_map.py
-        continue-on-error: false
-
-      - name: Auditoría de privacidad (bloquea el deploy si hay fuga)
+      - name: CP · auditoría de privacidad (bloquea si hay fuga)
         run: python github_pages/audit_privacy.py
+
+      # ── Corredor San Fernando (subdirectorio /san-fernando/) ──
+      - name: SF · tablas + galería
+        run: python github_pages_san_fernando/build_site.py
+      - name: SF · mapa
+        run: python github_pages_san_fernando/build_map.py
+      - name: SF · auditoría de privacidad (VIF/VBG solo heatmap; bloquea si hay fuga)
+        run: python github_pages_san_fernando/audit_privacy.py
+
+      # ── Combinar: CP en raíz + SF en /san-fernando/ ──
+      - name: Combinar sitios en un solo artefacto
+        run: |
+          mkdir -p _public
+          cp -r github_pages/site/. _public/
+          mkdir -p _public/san-fernando
+          cp -r github_pages_san_fernando/site/. _public/san-fernando/
 
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: github_pages/site
+          path: _public
 
   deploy:
     needs: build
