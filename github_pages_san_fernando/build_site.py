@@ -40,6 +40,7 @@ PNG_CHARTS = [
     ("corredor_san_fernando_heatmap_trim_dessocial.png", "DesSocial — Heatmap Trimestral | Corredor San Fernando"),
     ("corredor_san_fernando_de_heatmap_trim.png",     "Desarrollo Económico — Heatmap Trimestral | Corredor San Fernando"),
     ("corredor_san_fernando_de_evolucion_anual.png",  "Creación de Negocios Nuevos por Año | Corredor San Fernando"),
+    ("corredor_san_fernando_de_sectores.png",         "Desarrollo Económico por sector social (Salud/Educación/Deporte) | Corredor San Fernando"),
     ("corredor_san_fernando_comparacion_subzonas.png", "Comparación por subzonas | Corredor San Fernando"),
 ]
 
@@ -48,8 +49,8 @@ PNG_CHARTS = [
 # Vivienda_SecVivienda (barrios/direcciones), ni listados individuales.
 SHEETS_PUBLICABLES = [
     "ITT_Resumen", "Seguridad", "Movilidad", "Cohesion_y_Educacion",
-    "Entorno_Urbano", "Desarrollo_Economico", "Indicadores_Trimestrales",
-    "Comparacion_Subzonas",
+    "Entorno_Urbano", "Desarrollo_Economico", "DE_Sectores_Salud_Dep_Edu",
+    "Indicadores_Trimestrales", "Comparacion_Subzonas",
 ]
 SHEET_TITULOS = {
     "ITT_Resumen":              "Resumen ITT",
@@ -58,6 +59,7 @@ SHEET_TITULOS = {
     "Cohesion_y_Educacion":     "Cohesión + Educación",
     "Entorno_Urbano":           "Entorno Urbano",
     "Desarrollo_Economico":     "Desarrollo Económico",
+    "DE_Sectores_Salud_Dep_Edu": "DE · Salud/Educación/Deporte",
     "Indicadores_Trimestrales": "Indicadores Trimestrales",
     "Comparacion_Subzonas":     "Comparación por Subzonas",
 }
