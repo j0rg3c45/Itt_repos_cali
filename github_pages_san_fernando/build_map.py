@@ -86,10 +86,21 @@ def main():
     poly = gdf_zona.geometry.union_all()
     centroid = gdf_zona.to_crs("EPSG:3115").geometry.centroid.to_crs("EPSG:4326").iloc[0]
 
-    m = folium.Map(location=[centroid.y, centroid.x], zoom_start=15, tiles="OpenStreetMap")
+    # Capas base alternables. OpenStreetMap por defecto (no requiere API key).
+    # CartoDB se omite a propósito: ahora exige API key y saldría en blanco en el sitio público.
+    m = folium.Map(location=[centroid.y, centroid.x], zoom_start=15, tiles=None)
+    folium.TileLayer("OpenStreetMap", name="OpenStreetMap").add_to(m)
     folium.TileLayer(
         tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
         attr="Esri", name="Esri Satélite",
+    ).add_to(m)
+    folium.TileLayer(
+        tiles="http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
+        attr="Google", name="Google Streets", subdomains=["mt0", "mt1", "mt2", "mt3"],
+    ).add_to(m)
+    folium.TileLayer(
+        tiles="http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+        attr="Google", name="Google Satélite", subdomains=["mt0", "mt1", "mt2", "mt3"],
     ).add_to(m)
 
     # Polígono — solo geometría (sin properties)
@@ -115,7 +126,7 @@ def main():
         gy = gpd.read_file(YAWA).to_crs("EPSG:4326")
         geom = {"type": "FeatureCollection", "features": [
             {"type": "Feature", "properties": {}, "geometry": g.__geo_interface__} for g in gy.geometry]}
-        folium.GeoJson(geom, name="Yawa (punto focal)", show=False,
+        folium.GeoJson(geom, name="Yawa (punto focal)", show=True,   # única capa activa al abrir
                        style_function=lambda x: {"color": "#C62828", "weight": 3,
                                                 "fill": True, "fillColor": "#EF9A9A", "fillOpacity": 0.2}).add_to(m)
 
@@ -126,8 +137,15 @@ def main():
         nodes, edges = ox.graph_to_gdfs(G)
         edges = edges.to_crs("EPSG:4326")
         nodes = nodes.to_crs("EPSG:4326")
-        folium.GeoJson(edges[["geometry"]].__geo_interface__, name="Red peatonal OSM",
+        folium.GeoJson(edges[["geometry"]].__geo_interface__, name="Red peatonal OSM", show=False,
                        style_function=lambda x: {"color": "#2A9C8A", "weight": 2, "opacity": 0.7}).add_to(m)
+        # Nodos / intersecciones (apagado por defecto)
+        fg_nodos = folium.FeatureGroup(name="Nodos (intersecciones)", show=False)
+        for g in nodes.geometry:
+            folium.CircleMarker([g.y, g.x], radius=3, color="#E53935",
+                                fill=True, fill_opacity=0.9, weight=1).add_to(fg_nodos)
+        fg_nodos.add_to(m)
+        # Heatmap de intersecciones reales (street_count > 2), apagado
         if "street_count" in nodes.columns:
             inter = nodes[nodes["street_count"] > 2]
         else:
@@ -136,7 +154,7 @@ def main():
         fg_heat = folium.FeatureGroup(name="Mapa de calor — intersecciones", show=False)
         HeatMap(heat_inter, radius=18, blur=15, min_opacity=0.3).add_to(fg_heat)
         fg_heat.add_to(m)
-        print(f"Red peatonal OSM: {len(edges)} tramos | {len(nodes)} nodos")
+        print(f"Red peatonal OSM: {len(edges)} tramos | {len(nodes)} nodos | {len(heat_inter)} intersecciones")
     except Exception as e:
         print(f"[AVISO] red peatonal OSM omitida ({type(e).__name__}). El mapa se genera igual.")
 
@@ -181,10 +199,11 @@ def main():
                                 tooltip=etiqueta).add_to(fg)
         fg.add_to(m)
 
+    # Todas las capas de eventos arrancan APAGADAS: al abrir solo se ve el Polígono + Yawa.
     total_pts = 0
     for etiqueta, (paths, color) in EVENTOS_PUNTOS.items():
         coords = coords_dentro(paths, poly)
-        capa_puntos(etiqueta, coords, color, show=True)
+        capa_puntos(etiqueta, coords, color, show=False)
         total_pts += len(coords)
         print(f"{etiqueta}: {len(coords)} puntos")
 
@@ -193,8 +212,8 @@ def main():
                           filtro=lambda g: g["agrupado"].astype(str).str.startswith("RI"))
     spa = coords_dentro(COMPARENDOS, poly,
                         filtro=lambda g: g["agrupado"].astype(str) == "SUSTANCIAS PSICOACTIVAS")
-    capa_puntos("Riña", rinas, "pink", show=True)
-    capa_puntos("SPA (sustancias psicoactivas)", spa, "beige", show=True)
+    capa_puntos("Riña", rinas, "pink", show=False)
+    capa_puntos("SPA (sustancias psicoactivas)", spa, "beige", show=False)
     total_pts += len(rinas) + len(spa)
     print(f"Riña: {len(rinas)} | SPA: {len(spa)} puntos")
 
@@ -204,7 +223,7 @@ def main():
 
     vif = heat_coords(VIF_FILES)
     if vif:
-        fg = folium.FeatureGroup(name=f"VIF — mapa de calor ({len(vif)})", show=True)
+        fg = folium.FeatureGroup(name=f"VIF — mapa de calor ({len(vif)})", show=False)
         HeatMap([[la, lo] for la, lo in vif], radius=22, blur=18, min_opacity=0.35).add_to(fg)
         fg.add_to(m)
         print(f"VIF: {len(vif)} eventos -> HEATMAP (sin puntos)")
