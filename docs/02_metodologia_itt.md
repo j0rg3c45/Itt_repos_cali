@@ -88,7 +88,7 @@ Nota importante:
 - `01_itt_roosevelt.ipynb` ya sigue este metodo y replica la estructura operativa de Barrio Obrero adaptada a un corredor.
 - `03_itt_barrio_obrero.ipynb` ya sigue este metodo.
 - `02_itt_avenida_ciudad_de_cali.ipynb` aun debe migrarse a este metodo.
-- `04_itt_pulmon_oriente_2026.ipynb` es parcial y no reemplaza el flujo principal de comparacion entre zonas.
+- `04_itt_pulmon_oriente_5dim.ipynb` esta en fase 1 (Seguridad + Cohesion con datos; resto pendiente) y no reemplaza el flujo principal de comparacion entre zonas.
 
 ## Referencias de vivienda en analisis
 

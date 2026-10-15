@@ -19,7 +19,7 @@ El proyecto esta organizado para trabajar con:
 | `notebooks/02_itt_avenida_ciudad_de_cali.ipynb` | Avenida Ciudad de Cali | Implementado |
 | `notebooks/03_itt_barrio_obrero.ipynb` | Barrio Obrero | Implementado |
 | `notebooks/08_itt_ciudad_paraiso_5dim.ipynb` | Ciudad Paraiso (Comuna 3) | Implementado — Educacion fuera de alcance de este repo |
-| `notebooks/04_itt_pulmon_oriente_2026.ipynb` | Pulmon de Oriente 2026 | Parcial |
+| `notebooks/04_itt_pulmon_oriente_5dim.ipynb` | Pulmon de Oriente (Comunas 13-14) | Fase 1 — Seguridad + Cohesion (resto pendiente) |
 | `notebooks/05_comparativo_itt_zonas.ipynb` | Comparativo | Plantilla |
 
 Notas de estado:
@@ -65,7 +65,7 @@ itt-transformacion-territorial/
 |   |-- 01_itt_roosevelt.ipynb
 |   |-- 02_itt_avenida_ciudad_de_cali.ipynb
 |   |-- 03_itt_barrio_obrero.ipynb
-|   |-- 04_itt_pulmon_oriente_2026.ipynb
+|   |-- 04_itt_pulmon_oriente_5dim.ipynb
 |   `-- 05_comparativo_itt_zonas.ipynb
 |
 |-- outputs/

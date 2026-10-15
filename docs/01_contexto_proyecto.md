@@ -20,7 +20,7 @@ El repositorio esta pensado para:
 | ITT Roosevelt | `notebooks/01_itt_roosevelt.ipynb` | Implementado |
 | Avenida Ciudad de Cali | `notebooks/02_itt_avenida_ciudad_de_cali.ipynb` | Implementado |
 | Barrio Obrero | `notebooks/03_itt_barrio_obrero.ipynb` | Implementado |
-| Pulmon de Oriente 2026 | `notebooks/04_itt_pulmon_oriente_2026.ipynb` | Parcial |
+| Pulmon de Oriente (Comunas 13-14) | `notebooks/04_itt_pulmon_oriente_5dim.ipynb` | Fase 1 (Seguridad + Cohesion) |
 | Comparativo | `notebooks/05_comparativo_itt_zonas.ipynb` | Plantilla |
 
 ## Diferencias tecnicas por zona
