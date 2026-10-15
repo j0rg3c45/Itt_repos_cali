@@ -48,3 +48,7 @@ data/Educacion_2026/
 # shapefiles de infraestructura, etc.). Se procesa a archivos livianos en las carpetas de
 # dimension (consolidados JSON, geojson filtrados al poligono). La carpeta cruda NO va al repo.
 data/itt_Corredor_San_fernando_Yawa/data_2025_2026/
+
+# Exports crudos de Earth Engine y zips de shapes de San Fernando (ya extraidos a tif/geojson)
+data/itt_Corredor_San_fernando_Yawa/5_Dimension_Entorno_Urbano/NDVI_Corredor_San_fernando_Yawa/EarthEngine_Exports-*.zip
+data/itt_Corredor_San_fernando_Yawa/shape_geo/shape_Corredor_San_fernando_Yawa.zip
