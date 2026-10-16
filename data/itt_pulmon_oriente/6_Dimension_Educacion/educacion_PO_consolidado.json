@@ -1,0 +1,46 @@
+{
+  "generado_de": "SIMAT Anexo 6A (Dic 2023/2024/2025 + Marzo 2026) + SIMPADE (2023/2024/2025) del repo oficial, filtrado a los colegios dentro del poligono de Pulmon de Oriente.",
+  "colegios": [
+    "176001003161",
+    "176001005970",
+    "176001014359",
+    "176001017374",
+    "176001020693",
+    "176001024273",
+    "176001025946",
+    "176001027001",
+    "176001043791",
+    "176001800052"
+  ],
+  "colegios_nombre": {
+    "176001017374": "IE Gabriela Mistral",
+    "176001043791": "IE Nuevo Latir",
+    "176001800052": "IE Llano Verde",
+    "176001025946": "IE Santa Rosa",
+    "176001024273": "IE Jesús Villafañe Franco",
+    "176001020693": "IE Humberto Jordán Mazuera",
+    "176001027001": "IE Monseñor Ramón Arcila",
+    "176001014359": "IE La Anunciación",
+    "176001003161": "IE Bartolomé Loboguerrero",
+    "176001005970": "IE Siete de Agosto"
+  },
+  "nota": "Matricula/repitentes: Anexo 6A oficial, grados 0-11 + aceleracion (99). Desertores: SIMPADE oficial, sin ciclos/adultos. 2026 = corte marzo (SIMAT); SIMPADE 2026 no disponible -> NaN.",
+  "matricula": {
+    "2023": 18175,
+    "2024": 17643,
+    "2025": 17008,
+    "2026": 18337
+  },
+  "repitentes": {
+    "2023": 2173,
+    "2024": 2152,
+    "2025": 1820,
+    "2026": 2009
+  },
+  "desertores": {
+    "2023": 1501,
+    "2024": 1153,
+    "2025": 1054,
+    "2026": null
+  }
+}
