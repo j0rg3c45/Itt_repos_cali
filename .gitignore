@@ -58,3 +58,7 @@ data/itt_Corredor_San_fernando_Yawa/shape_geo/shape_Corredor_San_fernando_Yawa.z
 # NO van al repo: registro mercantil (~291 MB) y SIMAT/SIMPADE. El poligono + consolidados sí.
 data/Camara_de_Comercio/
 data/sec_vivienda/*.xlsx
+
+# Pulmón de Oriente: zips crudos de Entorno Urbano (NDVI/censo ya extraidos a tif/geojson)
+data/itt_pulmon_oriente/5_Entorno_Urbano-*.zip
+data/itt_pulmon_oriente/5_Entorno_Urbano/NDVI_Pulmon_De_Oriente.zip
