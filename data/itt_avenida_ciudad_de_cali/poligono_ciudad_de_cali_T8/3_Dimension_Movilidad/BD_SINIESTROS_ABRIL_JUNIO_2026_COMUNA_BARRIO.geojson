@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "BD_SINIESTROS_ABRIL_JUNIO_2026_COMUNA_BARRIO",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": 1054, "X": -76.515777, "Y": 3.347858, "Fecha": "2026-05-17T00:00:00", "hora": 9, "mes": 5, "Año": 2026, "Tipo_Confi": "Daños", "direccion": "CALLE 48 CARRERA 120", "Clase_acci": "CHOQUE", "Tipo_Choqu": "VEHICULO", "No_Vehicul": 1, "Tipo_de_Ve": "CAMIONETA", "barrio": "SD", "nombre": "El Hormiguero", "SEXO": null, "EDAD": null, "CONDICION": null, "TIPO_DE_AC": null, "VEHICULOS1": null, "tramo": "8", "distancia": 1880.92657302, "BUFF_DIST": 100.0, "ORIG_FID": 4, "proyecto": "TRAMO 08" }, "geometry": { "type": "Point", "coordinates": [ -76.515777, 3.347858 ] } },
+{ "type": "Feature", "properties": { "ID": 1058, "X": -76.516725, "Y": 3.350695, "Fecha": "2026-05-19T00:00:00", "hora": 8, "mes": 5, "Año": 2026, "Tipo_Confi": "Lesiones", "direccion": "CALLE 48 CARRERA 119", "Clase_acci": "CHOQUE", "Tipo_Choqu": "VEHICULO", "No_Vehicul": 2, "Tipo_de_Ve": "MOTOCICLETA,MOTOCICLETA", "barrio": "SD", "nombre": "El Hormiguero", "SEXO": null, "EDAD": null, "CONDICION": null, "TIPO_DE_AC": null, "VEHICULOS1": null, "tramo": "8", "distancia": 1880.92657302, "BUFF_DIST": 100.0, "ORIG_FID": 4, "proyecto": "TRAMO 08" }, "geometry": { "type": "Point", "coordinates": [ -76.516725, 3.350695 ] } }
+]
+}

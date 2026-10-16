@@ -53,3 +53,8 @@ data/itt_Corredor_San_fernando_Yawa/data_2025_2026/
 # Exports crudos de Earth Engine y zips de shapes de San Fernando (ya extraidos a tif/geojson)
 data/itt_Corredor_San_fernando_Yawa/5_Dimension_Entorno_Urbano/NDVI_Corredor_San_fernando_Yawa/EarthEngine_Exports-*.zip
 data/itt_Corredor_San_fernando_Yawa/shape_geo/shape_Corredor_San_fernando_Yawa.zip
+
+# Fuentes crudas GENERALES de ciudad completa (se preprocesan a consolidados livianos por zona).
+# NO van al repo: registro mercantil (~291 MB) y SIMAT/SIMPADE. El poligono + consolidados sí.
+data/Camara_de_Comercio/
+data/sec_vivienda/*.xlsx
