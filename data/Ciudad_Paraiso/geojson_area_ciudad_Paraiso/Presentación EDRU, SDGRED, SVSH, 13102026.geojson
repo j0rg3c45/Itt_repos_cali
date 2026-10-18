@@ -1,0 +1,2127 @@
+{
+ "type": "FeatureCollection",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+ },
+ "name": "Presentacion_EDRU_SDGRED_SVSH_13102026",
+ "fuente": "Presentación EDRU, SDGRED, SVSH, 13102026.pdf (Plan Cristo Rey, Ciudad Paraiso)",
+ "descripcion": "Cronograma de demoliciones del Plan Cristo Rey para las manzanas 203, 167 y 169. Entidades: EDRU (Empresa de Desarrollo y Renovacion Urbana), SVSH (Secretaria de Vivienda Social y Habitat), SGRED/SDGRED (Secretaria de Gestion del Riesgo, Emergencias y Desastres).",
+ "nota_geometria": "Los predios se numeran por su posicion dentro de la manzana del Plan Parcial (no catastral) y el PDF no incluye coordenadas; por eso cada registro se ubica en el centroide del area de Ciudad Paraiso. El valor esta en los atributos (fecha, estado, actividades), no en la posicion del punto.",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 1,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "20",
+    "fecha_demolicion": "2026-10-02",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 2,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "21",
+    "fecha_demolicion": "2026-10-09",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 3,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "22",
+    "fecha_demolicion": "2026-10-19",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 4,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "23",
+    "fecha_demolicion": "2026-10-19",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 5,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "24",
+    "fecha_demolicion": "2026-10-19",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 6,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "1",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 7,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "2",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 8,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "3",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 9,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "38",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 10,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "39",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 11,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "5",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 12,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "6",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 13,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "7",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 14,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "25",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 15,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "26",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 16,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "27",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 17,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "28",
+    "fecha_demolicion": "2026-10-26/30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada (semana 26-30 octubre)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 18,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "13",
+    "fecha_demolicion": "2026-12-04",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 19,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "14",
+    "fecha_demolicion": "2026-12-04",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 20,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "15",
+    "fecha_demolicion": "2026-12-04",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 21,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "16",
+    "fecha_demolicion": "2026-12-04",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 22,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "19",
+    "fecha_demolicion": "2026-12-04",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion programada",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 23,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "34",
+    "fecha_demolicion": "2027-01",
+    "estado": "Programado",
+    "anio": 2027,
+    "actividades": "Demolicion programada (enero 2027)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 24,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "203",
+    "predio": "18",
+    "fecha_demolicion": "2027-01",
+    "estado": "Programado",
+    "anio": 2027,
+    "actividades": "Demolicion programada (enero 2027)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 25,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "1",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 26,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "3",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 27,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "4",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 28,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "30",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 29,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "31",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 30,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "32",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 31,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "33",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 32,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "34",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 33,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "35",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 34,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "36",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 35,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "37",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 36,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "38",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 37,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "39",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 38,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "51",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 39,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "52",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 40,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "5",
+    "fecha_demolicion": "2026-10-15",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
+    "notas": "Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 41,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "6",
+    "fecha_demolicion": "2026-10-15",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
+    "notas": "Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 42,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "7",
+    "fecha_demolicion": "2026-10-15",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
+    "notas": "Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 43,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "10",
+    "fecha_demolicion": "2026-10-15",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
+    "notas": "Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 44,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "11",
+    "fecha_demolicion": "2026-10-15",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
+    "notas": "Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 45,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "9",
+    "fecha_demolicion": "2026-10-15",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
+    "notas": "Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 46,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "15",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 47,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "16",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 48,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "17",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 49,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "18",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 50,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "20",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 51,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "43",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 52,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "44",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 53,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "45",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 54,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "46",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 55,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "47",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 56,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "48",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 57,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "2",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 58,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "21",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 59,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "22",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 60,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "23",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 61,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "24",
+    "fecha_demolicion": "2026-10-30",
+    "estado": "Inhabitable (SGRED)",
+    "anio": 2026,
+    "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
+    "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 62,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "8",
+    "fecha_demolicion": "2026-12-05",
+    "estado": "Expropiacion",
+    "anio": 2026,
+    "actividades": "Demoliciones - Fideicomiso (01-05/12/2026); Notificacion a propietarios de expropiacion - EDRU (05/10/2026); Disponibilidad del recurso en Banco - Fideicomiso (06/10/2026); Radicacion Resolucion de Expropiacion - EDRU (desde 15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 63,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "13",
+    "fecha_demolicion": "2026-12-05",
+    "estado": "Expropiacion",
+    "anio": 2026,
+    "actividades": "Demoliciones - Fideicomiso (01-05/12/2026); Notificacion a propietarios de expropiacion - EDRU (05/10/2026); Disponibilidad del recurso en Banco - Fideicomiso (06/10/2026); Radicacion Resolucion de Expropiacion - EDRU (desde 15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 64,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "12",
+    "fecha_demolicion": "2026-12-05",
+    "estado": "Escritura Publica",
+    "anio": 2026,
+    "actividades": "Demoliciones - Fideicomiso (01-04/12/2026); Firma Minuta - EDRU/Fideicomiso/Propietarios (16/10/2026); Registro de Escritura Publica ante Oficina de Instrumentos Publicos - Notaria (19/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 65,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "14",
+    "fecha_demolicion": "2026-12-05",
+    "estado": "Escritura Publica",
+    "anio": 2026,
+    "actividades": "Demoliciones - Fideicomiso (01-04/12/2026); Firma Minuta - EDRU/Fideicomiso/Propietarios (16/10/2026); Registro de Escritura Publica ante Oficina de Instrumentos Publicos - Notaria (19/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 66,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "19",
+    "fecha_demolicion": "2026-12-05",
+    "estado": "Escritura Publica",
+    "anio": 2026,
+    "actividades": "Demoliciones - Fideicomiso (01-04/12/2026); Firma Minuta - EDRU/Fideicomiso/Propietarios (16/10/2026); Registro de Escritura Publica ante Oficina de Instrumentos Publicos - Notaria (19/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 67,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "27",
+    "fecha_demolicion": "2027",
+    "estado": "Compra integral (Fideicomiso)",
+    "anio": 2027,
+    "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
+    "notas": "Rosquillas Calenas",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 68,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "28",
+    "fecha_demolicion": "2027",
+    "estado": "Compra integral (Fideicomiso)",
+    "anio": 2027,
+    "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
+    "notas": "Rosquillas Calenas",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 69,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "29",
+    "fecha_demolicion": "2027",
+    "estado": "Compra integral (Fideicomiso)",
+    "anio": 2027,
+    "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
+    "notas": "Rosquillas Calenas",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 70,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "49",
+    "fecha_demolicion": "2027",
+    "estado": "Compra integral (Fideicomiso)",
+    "anio": 2027,
+    "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
+    "notas": "Rosquillas Calenas",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 71,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "50",
+    "fecha_demolicion": "2027",
+    "estado": "Compra integral (Fideicomiso)",
+    "anio": 2027,
+    "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
+    "notas": "Rosquillas Calenas",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 72,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "26",
+    "fecha_demolicion": "2027",
+    "estado": "Compra (Fideicomiso)",
+    "anio": 2027,
+    "actividades": "Recursos para compra por Fideicomiso ($1.100 millones) - Etapa 3 SVSH; supeditado a compra de predios 19,14,13,12,9,8,6,3,2 (Etapa 2, 3-4 meses); Adquirido y demolido (abril-mayo/2027)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 73,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "167",
+    "predio": "25",
+    "fecha_demolicion": "2027",
+    "estado": "Compra (Fideicomiso)",
+    "anio": 2027,
+    "actividades": "Recursos para compra por Fideicomiso ($1.100 millones) - Etapa 3 SVSH; supeditado a compra de predios 19,14,13,12,9,8,6,3,2 (Etapa 2, 3-4 meses); Adquirido y demolido (abril-mayo/2027)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 74,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "1",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 75,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "2",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 76,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "3",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 77,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "11",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 78,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "12",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 79,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "13",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 80,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "14",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 81,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "15",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 82,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "16",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 83,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "17",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 84,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "18",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 85,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "19",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 86,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "20",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 87,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "21",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 88,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "22",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 89,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "23",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 90,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "24",
+    "fecha_demolicion": "Demolidos",
+    "estado": "Demolido",
+    "anio": 2026,
+    "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 91,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "5",
+    "fecha_demolicion": "2026-10-15/16",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Contrato para demolicion y cerramiento - Fideicomiso; Pago de reconocimientos economicos - Fideicomiso (09/10/2026); Gestion social para entrega de predios - EDRU (14/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 92,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "9",
+    "fecha_demolicion": "2026-10-15/16",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Contrato para demolicion y cerramiento - Fideicomiso; Pago de reconocimientos economicos - Fideicomiso (09/10/2026); Gestion social para entrega de predios - EDRU (14/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 93,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "10",
+    "fecha_demolicion": "2026-10-15/16",
+    "estado": "Programado",
+    "anio": 2026,
+    "actividades": "Contrato para demolicion y cerramiento - Fideicomiso; Pago de reconocimientos economicos - Fideicomiso (09/10/2026); Gestion social para entrega de predios - EDRU (14/10/2026)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 94,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "4",
+    "fecha_demolicion": "2027-04-05/09",
+    "estado": "Expropiacion",
+    "anio": 2027,
+    "actividades": "Verificacion extincion de dominio - SSJ (05-16/10/2026, en proceso); Registro Etapa I MZ167 (30/10/2026); Traslado recursos al Fideicomiso 30% Etapa1 MZ167 (30/10-15/11/2026); Inicio compra/enajenacion voluntaria-expropiacion - EDRU (nov 2026-mar 2027); Demolicion - Fideicomiso (05-09/04/2027)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 95,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "6",
+    "fecha_demolicion": "2027-04-05/09",
+    "estado": "Expropiacion",
+    "anio": 2027,
+    "actividades": "Verificacion extincion de dominio - SSJ (05-16/10/2026, en proceso); Registro Etapa I MZ167 (30/10/2026); Traslado recursos al Fideicomiso 30% Etapa1 MZ167 (30/10-15/11/2026); Inicio compra/enajenacion voluntaria-expropiacion - EDRU (nov 2026-mar 2027); Demolicion - Fideicomiso (05-09/04/2027)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 96,
+    "plan": "Plan Cristo Rey",
+    "manzana_plan": "169",
+    "predio": "8",
+    "fecha_demolicion": "2027-04-05/09",
+    "estado": "Expropiacion",
+    "anio": 2027,
+    "actividades": "Verificacion extincion de dominio - SSJ (05-16/10/2026, en proceso); Registro Etapa I MZ167 (30/10/2026); Traslado recursos al Fideicomiso 30% Etapa1 MZ167 (30/10-15/11/2026); Inicio compra/enajenacion voluntaria-expropiacion - EDRU (nov 2026-mar 2027); Demolicion - Fideicomiso (05-09/04/2027)",
+    "notas": "",
+    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.529423,
+     3.445058
+    ]
+   }
+  }
+ ]
+}
