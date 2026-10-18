@@ -9,7 +9,7 @@
  "name": "Presentacion_EDRU_SDGRED_SVSH_13102026",
  "fuente": "Presentación EDRU, SDGRED, SVSH, 13102026.pdf (Plan Cristo Rey, Ciudad Paraiso)",
  "descripcion": "Cronograma de demoliciones del Plan Cristo Rey para las manzanas 203, 167 y 169. Entidades: EDRU (Empresa de Desarrollo y Renovacion Urbana), SVSH (Secretaria de Vivienda Social y Habitat), SGRED/SDGRED (Secretaria de Gestion del Riesgo, Emergencias y Desastres).",
- "nota_geometria": "Los predios se numeran por su posicion dentro de la manzana del Plan Parcial (no catastral) y el PDF no incluye coordenadas; por eso cada registro se ubica en el centroide del area de Ciudad Paraiso. El valor esta en los atributos (fecha, estado, actividades), no en la posicion del punto.",
+ "nota_geometria": "Cada predio se ubica DENTRO del poligono de su manzana catastral, cruzando la numeracion del Plan Parcial (203/167/169) con el campo 'manzana_plan_cristorey' de MANZANAS_U_2024. La posicion dentro de la manzana es aproximada (el PDF no da el predio exacto). Equivalencias: 203->03100018, 167->03090008, 169->03090003.",
  "features": [
   {
    "type": "Feature",
@@ -23,13 +23,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5301456,
+     3.4457005
     ]
    }
   },
@@ -45,13 +52,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5299433,
+     3.4457005
     ]
    }
   },
@@ -67,13 +81,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529741,
+     3.4457005
     ]
    }
   },
@@ -89,13 +110,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5295386,
+     3.4457005
     ]
    }
   },
@@ -111,13 +139,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5301456,
+     3.4459235
     ]
    }
   },
@@ -133,13 +168,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5299433,
+     3.4459235
     ]
    }
   },
@@ -155,13 +197,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529741,
+     3.4459235
     ]
    }
   },
@@ -177,13 +226,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5295386,
+     3.4459235
     ]
    }
   },
@@ -199,13 +255,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5301456,
+     3.4461465
     ]
    }
   },
@@ -221,13 +284,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5299433,
+     3.4461465
     ]
    }
   },
@@ -243,13 +313,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529741,
+     3.4461465
     ]
    }
   },
@@ -265,13 +342,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.530348,
+     3.4463695
     ]
    }
   },
@@ -287,13 +371,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5301456,
+     3.4463695
     ]
    }
   },
@@ -309,13 +400,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5299433,
+     3.4463695
     ]
    }
   },
@@ -331,13 +429,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529741,
+     3.4463695
     ]
    }
   },
@@ -353,13 +458,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5301456,
+     3.4465925
     ]
    }
   },
@@ -375,13 +487,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada (semana 26-30 octubre)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5299433,
+     3.4465925
     ]
    }
   },
@@ -397,13 +516,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529741,
+     3.4465925
     ]
    }
   },
@@ -419,13 +545,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529945,
+     3.4461286
     ]
    }
   },
@@ -441,13 +574,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529945,
+     3.4461286
     ]
    }
   },
@@ -463,13 +603,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529945,
+     3.4461286
     ]
    }
   },
@@ -485,13 +632,20 @@
     "anio": 2026,
     "actividades": "Demolicion programada",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529945,
+     3.4461286
     ]
    }
   },
@@ -507,13 +661,20 @@
     "anio": 2027,
     "actividades": "Demolicion programada (enero 2027)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529945,
+     3.4461286
     ]
    }
   },
@@ -529,13 +690,20 @@
     "anio": 2027,
     "actividades": "Demolicion programada (enero 2027)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03100018",
+    "manzana_catastral": "0018",
+    "barrio": "10",
+    "area_manzana_m2": 9685.1,
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.529945,
+     3.4461286
     ]
    }
   },
@@ -551,13 +719,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5287109,
+     3.4435225
     ]
    }
   },
@@ -573,13 +748,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5285534,
+     3.4435225
     ]
    }
   },
@@ -595,13 +777,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.528396,
+     3.4435225
     ]
    }
   },
@@ -617,13 +806,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282385,
+     3.4435225
     ]
    }
   },
@@ -639,13 +835,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5280811,
+     3.4435225
     ]
    }
   },
@@ -661,13 +864,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5279236,
+     3.4435225
     ]
    }
   },
@@ -683,13 +893,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5287109,
+     3.443682
     ]
    }
   },
@@ -705,13 +922,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5285534,
+     3.443682
     ]
    }
   },
@@ -727,13 +951,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.528396,
+     3.443682
     ]
    }
   },
@@ -749,13 +980,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282385,
+     3.443682
     ]
    }
   },
@@ -771,13 +1009,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5280811,
+     3.443682
     ]
    }
   },
@@ -793,13 +1038,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5287109,
+     3.4438415
     ]
    }
   },
@@ -815,13 +1067,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5285534,
+     3.4438415
     ]
    }
   },
@@ -837,13 +1096,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.528396,
+     3.4438415
     ]
    }
   },
@@ -859,13 +1125,20 @@
     "anio": 2026,
     "actividades": "15 predios ya demolidos. Pendiente cerramiento - SVSH (30/12/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282385,
+     3.4438415
     ]
    }
   },
@@ -881,13 +1154,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
     "notas": "Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5280811,
+     3.4438415
     ]
    }
   },
@@ -903,13 +1183,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
     "notas": "Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5287109,
+     3.444001
     ]
    }
   },
@@ -925,13 +1212,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
     "notas": "Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5285534,
+     3.444001
     ]
    }
   },
@@ -947,13 +1241,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
     "notas": "Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.528396,
+     3.444001
     ]
    }
   },
@@ -969,13 +1270,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
     "notas": "Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282385,
+     3.444001
     ]
    }
   },
@@ -991,13 +1299,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones (05/10/2026); Subsidios de arrendamiento SVSH (05-09/10/2026); Apoyo economico negocios - Sec. Desarrollo Economico (05-09/10/2026)",
     "notas": "Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5280811,
+     3.444001
     ]
    }
   },
@@ -1013,13 +1328,20 @@
     "anio": 2026,
     "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso, SSJ",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5288684,
+     3.4441605
     ]
    }
   },
@@ -1035,13 +1357,20 @@
     "anio": 2026,
     "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso, SSJ",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5287109,
+     3.4441605
     ]
    }
   },
@@ -1057,13 +1386,20 @@
     "anio": 2026,
     "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso, SSJ",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5285534,
+     3.4441605
     ]
    }
   },
@@ -1079,13 +1415,20 @@
     "anio": 2026,
     "actividades": "Demolicion - Fideicomiso (15/10/2026); Gestion retiro de vehiculos de la policia - SSJ (05-09/10/2026) (Pendiente)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso, SSJ",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.528396,
+     3.4441605
     ]
    }
   },
@@ -1101,13 +1444,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282385,
+     3.4441605
     ]
    }
   },
@@ -1123,13 +1473,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5280811,
+     3.4441605
     ]
    }
   },
@@ -1145,13 +1502,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5287109,
+     3.4443201
     ]
    }
   },
@@ -1167,13 +1531,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5285534,
+     3.4443201
     ]
    }
   },
@@ -1189,13 +1560,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.528396,
+     3.4443201
     ]
    }
   },
@@ -1211,13 +1589,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282385,
+     3.4443201
     ]
    }
   },
@@ -1233,13 +1618,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5288684,
+     3.4444796
     ]
    }
   },
@@ -1255,13 +1647,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5287109,
+     3.4444796
     ]
    }
   },
@@ -1277,13 +1676,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5285534,
+     3.4444796
     ]
    }
   },
@@ -1299,13 +1705,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.528396,
+     3.4444796
     ]
    }
   },
@@ -1321,13 +1734,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282385,
+     3.4444796
     ]
    }
   },
@@ -1343,13 +1763,20 @@
     "anio": 2026,
     "actividades": "Comite de Riesgos aprobacion inicio demoliciones - SGRED (05-09/10/2026); Subsidios de arrendamiento SVSH; Apoyo economico negocios - Desarrollo Economico (05-09/10/2026)",
     "notas": "Predios 20,43,44,45,46,47,48 en PH (propiedad horizontal). Sticker rojo de SGRED",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, SGRED, Sec. Desarrollo Economico",
+    "en_propiedad_horizontal": true,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1365,13 +1792,20 @@
     "anio": 2026,
     "actividades": "Demoliciones - Fideicomiso (01-05/12/2026); Notificacion a propietarios de expropiacion - EDRU (05/10/2026); Disponibilidad del recurso en Banco - Fideicomiso (06/10/2026); Radicacion Resolucion de Expropiacion - EDRU (desde 15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1387,13 +1821,20 @@
     "anio": 2026,
     "actividades": "Demoliciones - Fideicomiso (01-05/12/2026); Notificacion a propietarios de expropiacion - EDRU (05/10/2026); Disponibilidad del recurso en Banco - Fideicomiso (06/10/2026); Radicacion Resolucion de Expropiacion - EDRU (desde 15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1409,13 +1850,20 @@
     "anio": 2026,
     "actividades": "Demoliciones - Fideicomiso (01-04/12/2026); Firma Minuta - EDRU/Fideicomiso/Propietarios (16/10/2026); Registro de Escritura Publica ante Oficina de Instrumentos Publicos - Notaria (19/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1431,13 +1879,20 @@
     "anio": 2026,
     "actividades": "Demoliciones - Fideicomiso (01-04/12/2026); Firma Minuta - EDRU/Fideicomiso/Propietarios (16/10/2026); Registro de Escritura Publica ante Oficina de Instrumentos Publicos - Notaria (19/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1453,13 +1908,20 @@
     "anio": 2026,
     "actividades": "Demoliciones - Fideicomiso (01-04/12/2026); Firma Minuta - EDRU/Fideicomiso/Propietarios (16/10/2026); Registro de Escritura Publica ante Oficina de Instrumentos Publicos - Notaria (19/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1475,13 +1937,20 @@
     "anio": 2027,
     "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
     "notas": "Rosquillas Calenas",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1497,13 +1966,20 @@
     "anio": 2027,
     "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
     "notas": "Rosquillas Calenas",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1519,13 +1995,20 @@
     "anio": 2027,
     "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
     "notas": "Rosquillas Calenas",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1541,13 +2024,20 @@
     "anio": 2027,
     "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
     "notas": "Rosquillas Calenas",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1563,13 +2053,20 @@
     "anio": 2027,
     "actividades": "Compra integral por Fideicomiso (11 predios: 5 de MZ 167 por $5.000 millones + 6 de MZ 166 por $6.000-8.000 millones sujeto a lucro cesante)",
     "notas": "Rosquillas Calenas",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1585,13 +2082,20 @@
     "anio": 2027,
     "actividades": "Recursos para compra por Fideicomiso ($1.100 millones) - Etapa 3 SVSH; supeditado a compra de predios 19,14,13,12,9,8,6,3,2 (Etapa 2, 3-4 meses); Adquirido y demolido (abril-mayo/2027)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1607,13 +2111,20 @@
     "anio": 2027,
     "actividades": "Recursos para compra por Fideicomiso ($1.100 millones) - Etapa 3 SVSH; supeditado a compra de predios 19,14,13,12,9,8,6,3,2 (Etapa 2, 3-4 meses); Adquirido y demolido (abril-mayo/2027)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090008",
+    "manzana_catastral": "0008",
+    "barrio": "09",
+    "area_manzana_m2": 10739.6,
+    "entidad_responsable": "SVSH, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5284427,
+     3.4440002
     ]
    }
   },
@@ -1629,13 +2140,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5281116,
+     3.4453065
     ]
    }
   },
@@ -1651,13 +2169,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5279809,
+     3.4453065
     ]
    }
   },
@@ -1673,13 +2198,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5278502,
+     3.4453065
     ]
    }
   },
@@ -1695,13 +2227,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5277195,
+     3.4453065
     ]
    }
   },
@@ -1717,13 +2256,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282423,
+     3.4454083
     ]
    }
   },
@@ -1739,13 +2285,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5281116,
+     3.4454083
     ]
    }
   },
@@ -1761,13 +2314,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5279809,
+     3.4454083
     ]
    }
   },
@@ -1783,13 +2343,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5278502,
+     3.4454083
     ]
    }
   },
@@ -1805,13 +2372,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5277195,
+     3.4454083
     ]
    }
   },
@@ -1827,13 +2401,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282423,
+     3.4455102
     ]
    }
   },
@@ -1849,13 +2430,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5281116,
+     3.4455102
     ]
    }
   },
@@ -1871,13 +2459,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5279809,
+     3.4455102
     ]
    }
   },
@@ -1893,13 +2488,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5278502,
+     3.4455102
     ]
    }
   },
@@ -1915,13 +2517,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5277195,
+     3.4455102
     ]
    }
   },
@@ -1937,13 +2546,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5282423,
+     3.445612
     ]
    }
   },
@@ -1959,13 +2575,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5281116,
+     3.445612
     ]
    }
   },
@@ -1981,13 +2604,20 @@
     "anio": 2026,
     "actividades": "Cerramiento - Fideicomiso (15/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5279809,
+     3.445612
     ]
    }
   },
@@ -2003,13 +2633,20 @@
     "anio": 2026,
     "actividades": "Contrato para demolicion y cerramiento - Fideicomiso; Pago de reconocimientos economicos - Fideicomiso (09/10/2026); Gestion social para entrega de predios - EDRU (14/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5278502,
+     3.445612
     ]
    }
   },
@@ -2025,13 +2662,20 @@
     "anio": 2026,
     "actividades": "Contrato para demolicion y cerramiento - Fideicomiso; Pago de reconocimientos economicos - Fideicomiso (09/10/2026); Gestion social para entrega de predios - EDRU (14/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5277195,
+     3.445612
     ]
    }
   },
@@ -2047,13 +2691,20 @@
     "anio": 2026,
     "actividades": "Contrato para demolicion y cerramiento - Fideicomiso; Pago de reconocimientos economicos - Fideicomiso (09/10/2026); Gestion social para entrega de predios - EDRU (14/10/2026)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "EDRU, Fideicomiso",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5281116,
+     3.4457138
     ]
    }
   },
@@ -2069,13 +2720,20 @@
     "anio": 2027,
     "actividades": "Verificacion extincion de dominio - SSJ (05-16/10/2026, en proceso); Registro Etapa I MZ167 (30/10/2026); Traslado recursos al Fideicomiso 30% Etapa1 MZ167 (30/10-15/11/2026); Inicio compra/enajenacion voluntaria-expropiacion - EDRU (nov 2026-mar 2027); Demolicion - Fideicomiso (05-09/04/2027)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "EDRU, Fideicomiso, SSJ",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5279809,
+     3.4457138
     ]
    }
   },
@@ -2091,13 +2749,20 @@
     "anio": 2027,
     "actividades": "Verificacion extincion de dominio - SSJ (05-16/10/2026, en proceso); Registro Etapa I MZ167 (30/10/2026); Traslado recursos al Fideicomiso 30% Etapa1 MZ167 (30/10-15/11/2026); Inicio compra/enajenacion voluntaria-expropiacion - EDRU (nov 2026-mar 2027); Demolicion - Fideicomiso (05-09/04/2027)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "EDRU, Fideicomiso, SSJ",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5278502,
+     3.4457138
     ]
    }
   },
@@ -2113,15 +2778,23 @@
     "anio": 2027,
     "actividades": "Verificacion extincion de dominio - SSJ (05-16/10/2026, en proceso); Registro Etapa I MZ167 (30/10/2026); Traslado recursos al Fideicomiso 30% Etapa1 MZ167 (30/10-15/11/2026); Inicio compra/enajenacion voluntaria-expropiacion - EDRU (nov 2026-mar 2027); Demolicion - Fideicomiso (05-09/04/2027)",
     "notas": "",
-    "geometria_nota": "Punto de referencia nominal (centroide del area de Ciudad Paraiso). La numeracion de predio/manzana es del Plan Parcial, no catastral; el PDF no trae coordenadas."
+    "geometria_nota": "Ubicado dentro del poligono de su manzana catastral. La posicion exacta del predio dentro de la manzana no la da el PDF; es aproximada.",
+    "idmanzana_catastral": "03090003",
+    "manzana_catastral": "0003",
+    "barrio": "09",
+    "area_manzana_m2": 3266.1,
+    "entidad_responsable": "EDRU, Fideicomiso, SSJ",
+    "en_propiedad_horizontal": false,
+    "georref": "manzana catastral real (join por manzana_plan_cristorey)"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -76.529423,
-     3.445058
+     -76.5277195,
+     3.4457138
     ]
    }
   }
- ]
+ ],
+ "mejoras": "v2: georreferenciacion a manzana catastral real + campos idmanzana_catastral, barrio, area_manzana_m2, entidad_responsable, en_propiedad_horizontal."
 }
