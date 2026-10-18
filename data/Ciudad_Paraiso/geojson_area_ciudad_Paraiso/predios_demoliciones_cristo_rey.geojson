@@ -26,9 +26,14 @@
     "predio_plan": "36",
     "es_propiedad_horizontal_catastro": true,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -949,9 +954,14 @@
     "predio_plan": "10",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -1365,9 +1375,14 @@
     "predio_plan": "11",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -2622,9 +2637,14 @@
     "predio_plan": "12",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -4252,9 +4272,14 @@
     "predio_plan": "31",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -5024,9 +5049,14 @@
     "predio_plan": "32",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -5250,9 +5280,14 @@
     "predio_plan": "33",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -6034,9 +6069,14 @@
     "predio_plan": "30",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -6259,9 +6299,14 @@
     "predio_plan": "29",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -7312,9 +7357,14 @@
     "predio_plan": "8",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -9114,9 +9164,14 @@
     "predio_plan": "40",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
@@ -9251,9 +9306,14 @@
     "predio_plan": "41",
     "es_propiedad_horizontal_catastro": false,
     "en_cronograma_pdf": false,
-    "fecha_demolicion": null,
-    "estado": null,
-    "demolicion": "Sin demolicion programada"
+    "fecha_demolicion": "No aplica",
+    "estado": "No aplica",
+    "demolicion": "Sin demolicion programada",
+    "anio": "",
+    "actividades": "Sin demolicion programada en el PDF",
+    "entidad_responsable": "",
+    "en_propiedad_horizontal": false,
+    "notas": ""
    },
    "geometry": {
     "type": "Polygon",
