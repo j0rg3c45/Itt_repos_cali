@@ -1,0 +1,28 @@
+{
+  "generado_de": "SIMAT Anexo 6A (Dic 2023/2024/2025 + Marzo 2026) + SIMPADE (2023/2024/2025), filtrado al DANE del colegio de Barrio Obrero.",
+  "colegios": [
+    "176001005368"
+  ],
+  "colegios_nombre": {
+    "176001005368": "IE Republica de Argentina"
+  },
+  "nota": "Matricula/repitentes: Anexo 6A oficial, grados 0-11 + aceleracion (99). Desertores: SIMPADE oficial, sin ciclos/adultos. 2026 = corte marzo (SIMAT); SIMPADE 2026 no disponible -> desercion NaN.",
+  "matricula": {
+    "2023": 750,
+    "2024": 709,
+    "2025": 762,
+    "2026": 867
+  },
+  "repitentes": {
+    "2023": 109,
+    "2024": 80,
+    "2025": 78,
+    "2026": 104
+  },
+  "desertores": {
+    "2023": 194,
+    "2024": 89,
+    "2025": 102,
+    "2026": null
+  }
+}
