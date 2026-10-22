@@ -62,3 +62,9 @@ data/sec_vivienda/*.xlsx
 # Pulmón de Oriente: zips crudos de Entorno Urbano (NDVI/censo ya extraidos a tif/geojson)
 data/itt_pulmon_oriente/5_Entorno_Urbano-*.zip
 data/itt_pulmon_oriente/5_Entorno_Urbano/NDVI_Pulmon_De_Oriente.zip
+
+# Scripts de export locales ad-hoc (generan los geojson/mapas fuera del repo)
+scripts_export/
+
+# NDVI empaquetado (.rar duplica los .tif ya versionados en la carpeta)
+data/itt_barrio_obrero/5_Entorno_Urbano/NDVI_Barrio_Obrero.rar
