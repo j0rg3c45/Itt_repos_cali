@@ -68,3 +68,8 @@ scripts_export/
 
 # NDVI empaquetado (.rar duplica los .tif ya versionados en la carpeta)
 data/itt_barrio_obrero/5_Entorno_Urbano/NDVI_Barrio_Obrero.rar
+
+# Data cruda GENERAL de ciudad completa por dimension (~2.3 GB: censo arboreo DAGMA,
+# SIMAT/SIMPADE, siniestros, registro mercantil, estaciones MECAL, etc.). Se procesa a
+# consolidados livianos / geojson filtrados por zona. La carpeta cruda NO va al repo.
+data/01_Dimensiones_ITT_general/
