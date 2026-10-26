@@ -1,12 +1,12 @@
 {
-  "generado_de": "SIMAT Anexo 6A (Dic 2023/2024/2025 + Marzo 2026) + SIMPADE (2023/2024/2025), filtrado al DANE del unico colegio oficial del corredor Roosevelt. Mismo establecimiento que San Fernando (IE Liceo Departamental, comuna 19), reutilizado por identidad de DANE.",
+  "generado_de": "SIMAT Anexo 6A (Dic 2023/2024/2025 + Marzo 2026) + SIMPADE (2023/2024/2025) desde data/Educacion_2026, filtrado al DANE del colegio oficial del corredor Roosevelt (IE Liceo Departamental 176001001745).",
   "colegios": [
     "176001001745"
   ],
   "colegios_nombre": {
     "176001001745": "IE Liceo Departamental"
   },
-  "nota": "Matricula/repitentes: Anexo 6A oficial, grados 0-11 + aceleracion (99). Desertores: SIMPADE oficial, sin ciclos/adultos. 2026 = corte marzo (SIMAT); SIMPADE 2026 no disponible -> desercion NaN.",
+  "nota": "Matricula/repitentes: Anexo 6A oficial, grados 0-11 + aceleracion (99). Desertores: SIMPADE oficial, sin ciclos/adultos. 2026 = corte marzo (SIMAT); SIMPADE 2026 no disponible -> desercion NaN. Linea 2023-2025 validada sin cambios.",
   "matricula": {
     "2023": 2172,
     "2024": 2112,
