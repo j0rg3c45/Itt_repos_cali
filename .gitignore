@@ -28,8 +28,9 @@ outputs/*/geojson_capas/
 outputs/*/*_consolidado.xlsx
 outputs/*/mapa_*.html
 
-# Scripts/temporales de ejecucion local y utilidades ad-hoc
-_*.py
+# Scripts/temporales de ejecucion local y utilidades ad-hoc (SOLO en la raiz del repo;
+# anclado con '/' para no capturar dunders legitimos como src/__init__.py)
+/_*.py
 
 # uv
 uv.lock
