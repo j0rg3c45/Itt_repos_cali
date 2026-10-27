@@ -239,11 +239,14 @@ class ITTZoneExtractor:
             dfr, _ = _cargar_fuente(self._p(D), ["hurto"], columnas_requeridas=["x", "y"])
             if len(dfr) == 0: raise FileNotFoundError("sin archivos de hurtos")
             g = _puntos_wgs84(dfr, "x", "y")
-            g["_f"] = _coalesce_fecha(g, ["fecha_hecho", "fecha_hech"])
-            g["anio"] = _to_num(g["anio"]) if "anio" in g.columns else g["_f"].dt.year
+            # El año SIEMPRE se deriva de la fecha coalescida (NO de la columna 'anio'):
+            # la extensión 2026 usa 'fechahecho'/'fecha_hecho' y NO trae columna 'anio',
+            # que al concatenar quedaría NaN y descartaría toda la extensión.
+            g["_f"] = _coalesce_fecha(g, ["fecha_hecho", "fechahecho", "fecha_hech"])
+            g["anio"] = g["_f"].dt.year
             g = _recorte_bbox_then_within(g, self.poly_wgs)
             g = g[g["anio"].isin(ANIOS)]
-            g = _poblar_fecha_trim(g, ["fecha_hecho", "fecha_hech"])
+            g = _poblar_fecha_trim(g, ["fecha_hecho", "fechahecho", "fecha_hech"])
             res["hurtos"] = g
         except Exception as e:
             res["hurtos"] = gpd.GeoDataFrame(geometry=[], crs=CRS_GEO); print(f"[seguridad] hurtos: {type(e).__name__}: {e}")
@@ -255,11 +258,11 @@ class ITTZoneExtractor:
                                     columnas_requeridas=["lon", "lat", "agrupado"])
             if len(dfc) == 0: raise FileNotFoundError("sin comparendos de convivencia (con 'agrupado')")
             gc = _puntos_wgs84(dfc, "lon", "lat")
-            gc["_f"] = _coalesce_fecha(gc, ["fecha_hecho", "fecha_hech"])
+            gc["_f"] = _coalesce_fecha(gc, ["fecha_hecho", "fechahecho", "fecha_hech"])
             gc["anio"] = gc["_f"].dt.year
             gc = _recorte_bbox_then_within(gc, self.poly_wgs)
             gc = gc[gc["anio"].isin(ANIOS)]
-            gc = _poblar_fecha_trim(gc, ["fecha_hecho", "fecha_hech"])
+            gc = _poblar_fecha_trim(gc, ["fecha_hecho", "fechahecho", "fecha_hech"])
             ag = gc["agrupado"].astype(str).str.upper() if "agrupado" in gc.columns else pd.Series("", index=gc.index)
             res["comparendos"] = gc
             if rinas_modo == "contains":
@@ -284,11 +287,12 @@ class ITTZoneExtractor:
                                     columnas_requeridas=["x", "y"])
             if len(dfv) == 0: raise FileNotFoundError("sin archivos de VIF")
             g = _puntos_wgs84(dfv, "x", "y")
-            g["_f"] = _coalesce_fecha(g, ["fecha_hecho", "fecha_hech"])
-            g["anio"] = _to_num(g["anio"]) if "anio" in g.columns else g["_f"].dt.year
+            # Año derivado de la fecha (la extensión 2026 no trae columna 'anio').
+            g["_f"] = _coalesce_fecha(g, ["fecha_hecho", "fechahecho", "fecha_hech"])
+            g["anio"] = g["_f"].dt.year
             g = _recorte_bbox_then_within(g, self.poly_wgs)
             g = g[g["anio"].isin(ANIOS)]
-            g = _poblar_fecha_trim(g, ["fecha_hecho", "fecha_hech"])
+            g = _poblar_fecha_trim(g, ["fecha_hecho", "fechahecho", "fecha_hech"])
             res["vif"] = g
         except Exception as e:
             res["vif"] = gpd.GeoDataFrame(geometry=[], crs=CRS_GEO); print(f"[cohesion] vif: {type(e).__name__}: {e}")
