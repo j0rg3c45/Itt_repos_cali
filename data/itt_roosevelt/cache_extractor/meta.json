@@ -1,4 +1,11 @@
 {
   "zona": "Corredor Roosevelt — Comuna 19",
-  "arboles_n": 1776
+  "arboles_n": 1776,
+  "cobertura_2026": {
+    "homicidios": 3,
+    "hurtos": 3,
+    "comparendos": 3,
+    "vif": 3,
+    "siniestros": 2
+  }
 }

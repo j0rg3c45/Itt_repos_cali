@@ -181,6 +181,15 @@ def _conteo_anual(gdf, col_anio="anio"):
     return {a: int(s.get(a, 0)) for a in ANIOS}
 
 
+def _q2026_fuente(df, candidatos):
+    """Último trimestre de 2026 con dato en la FUENTE COMPLETA (ciudad, antes del recorte).
+    La cobertura se mide aquí y no dentro de la zona: una zona con 0 eventos en 2026 no
+    significa que falte el dato (p.ej. 0 homicidios en Roosevelt con la fuente cubriendo Q3)."""
+    f = _coalesce_fecha(df, candidatos)
+    f26 = f[f.dt.year == 2026]
+    return int(f26.dt.quarter.max()) if len(f26) else 0
+
+
 def _poblar_fecha_trim(gdf, candidatos):
     """Garantiza columnas '_f' (fecha parseada) y 'trimestre' en el GeoDataFrame.
     Necesario para la lógica de cobertura trimestral 2026 aguas abajo (notebook V3).
@@ -225,6 +234,7 @@ class ITTZoneExtractor:
         try:
             dfh, _ = _cargar_fuente(self._p(D), ["homicidio"], columnas_requeridas=["x", "y"])
             if len(dfh) == 0: raise FileNotFoundError("sin archivos de homicidios")
+            res.setdefault("cobertura_2026", {})["homicidios"] = _q2026_fuente(dfh, ["fechah", "fechao", "fecha_hecho", "fecha_hech"])
             g = _puntos_wgs84(dfh, "x", "y")
             g["_f"] = _coalesce_fecha(g, ["fechah", "fechao", "fecha_hecho", "fecha_hech"])
             g["anio"] = g["_f"].dt.year
@@ -238,6 +248,7 @@ class ITTZoneExtractor:
         try:
             dfr, _ = _cargar_fuente(self._p(D), ["hurto"], columnas_requeridas=["x", "y"])
             if len(dfr) == 0: raise FileNotFoundError("sin archivos de hurtos")
+            res.setdefault("cobertura_2026", {})["hurtos"] = _q2026_fuente(dfr, ["fecha_hecho", "fechahecho", "fecha_hech"])
             g = _puntos_wgs84(dfr, "x", "y")
             # El año SIEMPRE se deriva de la fecha coalescida (NO de la columna 'anio'):
             # la extensión 2026 usa 'fechahecho'/'fecha_hecho' y NO trae columna 'anio',
@@ -257,6 +268,7 @@ class ITTZoneExtractor:
             dfc, _ = _cargar_fuente(self._p(D), ["comparendo"],
                                     columnas_requeridas=["lon", "lat", "agrupado"])
             if len(dfc) == 0: raise FileNotFoundError("sin comparendos de convivencia (con 'agrupado')")
+            res.setdefault("cobertura_2026", {})["comparendos"] = _q2026_fuente(dfc, ["fecha_hecho", "fechahecho", "fecha_hech"])
             gc = _puntos_wgs84(dfc, "lon", "lat")
             gc["_f"] = _coalesce_fecha(gc, ["fecha_hecho", "fechahecho", "fecha_hech"])
             gc["anio"] = gc["_f"].dt.year
@@ -286,6 +298,7 @@ class ITTZoneExtractor:
             dfv, _ = _cargar_fuente(self._p(D), ["violencia_intrafamiliar", "intrafamiliar", "_vif"],
                                     columnas_requeridas=["x", "y"])
             if len(dfv) == 0: raise FileNotFoundError("sin archivos de VIF")
+            res.setdefault("cobertura_2026", {})["vif"] = _q2026_fuente(dfv, ["fecha_hecho", "fechahecho", "fecha_hech"])
             g = _puntos_wgs84(dfv, "x", "y")
             # Año derivado de la fecha (la extensión 2026 no trae columna 'anio').
             g["_f"] = _coalesce_fecha(g, ["fecha_hecho", "fechahecho", "fecha_hech"])
@@ -312,6 +325,7 @@ class ITTZoneExtractor:
                                           columnas_requeridas=["X", "Y", "Fecha"])
             if len(base) == 0:
                 raise FileNotFoundError("sin archivos de siniestros con columnas X/Y/Fecha")
+            res.setdefault("cobertura_2026", {})["siniestros"] = _q2026_fuente(base, ["Fecha"])
             dedup_cols = [c for c in ("ID", "Fecha", "X", "Y", "Tipo_Confi") if c in base.columns]
             base = base.drop_duplicates(subset=dedup_cols).reset_index(drop=True)
             x = _to_num(base["X"]); y = _to_num(base["Y"]); ok = x.notna() & y.notna()
