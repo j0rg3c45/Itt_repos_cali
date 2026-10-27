@@ -19,6 +19,15 @@ Thumbs.db
 /ciudad_paraiso_*.png
 /*.png
 
+# Salidas regenerables del flujo V3 (estructura estandar outputs/<Zona>/).
+# Imagenes, mapas HTML, Excel consolidado y capas GeoJSON se regeneran al ejecutar el
+# notebook; no se versionan (pueden pesar MB). Se conserva el codigo que las produce.
+outputs/*/imagenes/
+outputs/*/imagenes_notebook_original/
+outputs/*/geojson_capas/
+outputs/*/*_consolidado.xlsx
+outputs/*/mapa_*.html
+
 # Scripts/temporales de ejecucion local y utilidades ad-hoc
 _*.py
 
