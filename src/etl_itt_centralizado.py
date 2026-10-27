@@ -226,8 +226,10 @@ class ITTZoneExtractor:
 
     # --- Dimensión 1: Seguridad ---
     def seguridad(self, rinas_modo: str = "startswith"):
-        """rinas_modo: 'startswith' (criterio validado de Roosevelt: agrupado empieza por
-        'RI') o 'contains' (criterio amplio). El default reproduce la línea base."""
+        """rinas_modo (según el notebook original de cada zona):
+          'startswith' -> agrupado empieza por 'RI' (línea base Roosevelt);
+          'exacto'     -> agrupado == 'RIÑAS' (línea base Barrio Obrero);
+          'contains'   -> agrupado contiene 'RI' (criterio amplio)."""
         D = "1_Dimension_Seguridad_general"
         res = {}
         # Homicidios (x/y = lon/lat; fechah MM/DD/YYYY). Descubre todos los archivos "homicidio".
@@ -278,7 +280,9 @@ class ITTZoneExtractor:
             ag = gc["agrupado"].astype(str).str.upper() if "agrupado" in gc.columns else pd.Series("", index=gc.index)
             res["comparendos"] = gc
             if rinas_modo == "contains":
-                mask_rin = ag.str.contains("RI", na=False)                      # criterio amplio (opcional por zona)
+                mask_rin = ag.str.contains("RI", na=False)                      # criterio amplio (opcional)
+            elif rinas_modo == "exacto":
+                mask_rin = ag.str.strip() == "RIÑAS"                            # línea base Barrio Obrero
             else:
                 mask_rin = ag.str.startswith("RI", na=False)                    # línea base Roosevelt (startswith 'RI')
             res["rinas"] = gc[mask_rin].copy()
