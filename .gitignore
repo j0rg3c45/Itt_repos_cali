@@ -19,14 +19,17 @@ Thumbs.db
 /ciudad_paraiso_*.png
 /*.png
 
-# Salidas regenerables del flujo V3 (estructura estandar outputs/<Zona>/).
-# Imagenes, mapas HTML, Excel consolidado y capas GeoJSON se regeneran al ejecutar el
-# notebook; no se versionan (pueden pesar MB). Se conserva el codigo que las produce.
+# Salidas regenerables del flujo V3 (estructura estandar outputs/mapa_analitico_<Zona>/).
+# Imagenes, mapas HTML, Excel consolidado, capas GeoJSON y manifest se regeneran al ejecutar
+# el notebook / el exportador; no se versionan (pueden pesar MB). Se conserva el codigo que
+# las produce. Cubre tanto la estructura nueva (mapa_analitico_*) como la anterior (<Zona>/).
 outputs/*/imagenes/
 outputs/*/imagenes_notebook_original/
 outputs/*/geojson_capas/
 outputs/*/*_consolidado.xlsx
 outputs/*/mapa_*.html
+outputs/*/mapa_analitico_*.html
+outputs/*/mapa_analitico_manifest_*.json
 
 # Scripts/temporales de ejecucion local y utilidades ad-hoc (SOLO en la raiz del repo;
 # anclado con '/' para no capturar dunders legitimos como src/__init__.py)
